@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #5a189a;
+}
+header{
+    background-color: #c1b8d7;
+    height: 70px;
+}
+
+.botonNav{
+    text-decoration: none;
+    background-color: #7e7590;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 15px;
+}
+.fondoOscuro{
+    background-color: #c1b8d7;
+}
+.botonNav:hover{
+    background-color: #5a189a;
+    color: #fff;
+}
+footer{
+    background-color: #5a189a;
+    margin-top: 20px;
+}
+
+/* Vista Mobile */
+
+.navMobileContainer{
+    height: 70px;
+}
+.navMobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navMobile i{
+    color: #5a189a;
+    font-size: 2em;
+}
+.navDesktop{
+    display: none;
+}
+.bienv1Container{
+    color: #5a189a;
+}
+.bienvH1{
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 20px;
+}
+.bienvH1 em{
+    font-weight: 600;
+}
+.bienvH1 span{
+    font-size: 6.5em;
+    font-weight: 900;    
+}
+.especialidadLink{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.especialidadLink i{
+    font-size: 2.5em;
+}
+.especialidadLink h3 a{
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    color: #5a189a;
+    line-height: 22px;
+    padding-left: 15px;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+}
+.imgHome{
+    height: 320px;
+}
+.divLine{
+    background-color: #5a189a;
+    height: 4px;
+    width: 95%;
+    margin: auto;
+}
+#medicasgeneralistas{
+    font-size: 3em;
+    line-height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+.subtituloMg{
+    font-size: 1em;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.recoContainer{
+    width: 290px;
+    margin: auto;
+}
+.imgMobile{
+    width: 290px;
+    border-radius: 15px;
+}
+.recoContainer p{
+    font-size: 0.9em;
+    text-align: justify;
+    padding: 10px;
+}
+.boton{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    background-color: #5a189a;
+    border-radius: 15px;
+    border: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 290px;
+}
+.imgCap{
+    margin-top: 30px;
+}
+.capTitle{
+    font-weight: 900;
+    font-size: 2.3em;
+    padding-top: 20px;
+    text-align: center;
+}
+.capTxt{
+    font-size: 0.9em;
+    text-align: justify;
+    width: 290px;
+}
+.inputHome{
+    width: 290px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.footerContainer p, .footerContainer h4,.footerContainer i{
+    color: #fff;
+}
+.footerIzq, .footerDer{
+    width: 280px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footerIzq h4{
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 30px;
+}
+.footerIzq p{
+    font-size: 0.9em;
+    font-weight: 200;
+    text-align: justify;
+}
+.footerIzq p strong{
+    color: #fff;
+    font-weight: 400;
+}
+.footerDer i{
+    font-size: 2em;
+}
+.footerDer h4 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+/* Vista Tablet */
+@media only screen and (min-width:576px){
+    .especialidadLink h3 a{
+        font-size: 0.8em;
+    }
+    .imgContainer{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .divLine{
+        width: 95%;
+    }
+}
+
+/* Vista Desktop */
+@media only screen and (min-width:992px){
+    .navMobile{
+        display: none;
+    }
+    .navDesktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .listNav{
+        border: 1.5px solid #5a189a;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 0;
+        margin-left: 80px;
+    }
+    .listNav:hover{
+        border: 2.5px solid #5a189a;
+    }
+    .listNav li{
+        list-style: none;
+        display: inline;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+    .listNav li a{
+        text-decoration: none;
+        color: #5a189a;
+    }
+    .listNav li a:hover{
+        font-weight: 600;
+    }
+    .botonNav{
+        margin-right: 80px;
+    }
+    .bienvH1{
+        font-size: 1.3em;
+        margin-top: 100px;
+    }
+    .bienvH1 span{
+        font-size: 7em;  
+    }
+    .especialidadLink i{
+        font-size: 2.5em;
+    }
+    .especialidadLink h3 a{
+        text-decoration: none;
+        font-size: 1em;
+        display: inline-block;
+        color: #5a189a;
+        line-height: 22px;
+        padding-left: 15px;
+    }
+    .imgContainer{
+        justify-content: flex-start;
+    }
+    .imgHome{
+        height: 550px;
+    }
+    
+}
+/* Vista Desktop xxxl */
+@media only screen and (min-width:1500px){   
+    
+    .bienvH1{
+        font-size: 2em;
+        margin-top: 150px;
+    }
+    .bienvH1 span{
+        font-size: 7em;  
+    }
+    .especialidadLink{
+        padding-top: 50px;
+    }
+    .especialidadLink i{
+        font-size: 5em;
+    }
+    .especialidadLink h3 a{
+        text-decoration: none;
+        font-size: 1.5em;
+        display: inline-block;
+        color: #5a189a;
+        line-height: 40px;
+        padding-left: 30px;
+    }
+    .imgHome{
+        height: 850px;
+    }
+    .listNav{
+        margin-left: 150px;
+    }
+    .botonNav{
+        margin-right: 150px;
+    }
+    
+}
