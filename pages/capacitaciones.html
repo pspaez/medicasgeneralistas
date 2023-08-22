@@ -4,66 +4,104 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Medicas Generalistas</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Boopstrap start-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Boopstrap end-->
+
         <link rel="stylesheet" href="../styles.css">
+    
+        <!--Font awesome start-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        <!--Font awesome end-->
+        <!--Google fonts start-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <!--Google fonts end-->
     </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="lista-nav">
+<body class="fondoClaro">
+    <header class="container-fluid"> 
+        <div class="row navMobileContainer">
+            <!--Navbar mobile start-->
+            <nav class="col-sm-12 navMobile">
+                <i class="fa-solid fa-bars"></i>
+                <a class="botonNav" href="pages/contacto.html">Contacto / Turnos</a>
+            </nav>
+            <!--Navbar mobile end-->
+            <nav class="col-sm-12 navDesktop">
+                <ul class="listNav">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="recomendaciones.html">Recomendaciones</a></li>
                     <li><a href="capacitaciones.html">Capacitaciones</a></li>
                     <li><a href="queesmg.html">¿Qué es MG?</a></li>
-                </ul>            
+                </ul>
+                <a class="botonNav" href="contacto.html">Contacto / Turnos</a>
             </nav>
-            <a class="boton-nav" href="contacto.html">Contacto / Turnos</a>
-        </header>
-    <main>
-        <section class="capacitaciones-container">
-            <div class="capacitaciones-item1" class="galeria-container">
-                <img src="../media/capacitaciones2.jpg" alt="imagen Curso de rcp">
-                <img src="../media/capacitaciones1.jpg" alt="imagen curso de rcp">
-                <img src="../media/capacitaciones3.jpg" alt="imagen curso de rcp">
-                <img src="../media/capacitaciones4.jpeg" alt="imagen curso de rcp">
-            </div>
-            <div class="capacitaciones-item2">
-                <h1>Capacitaciones y cursos de RCP</h1>
-                <p>Realizamos <strong>cursos de RCP</strong> didácticos con materiales de primera calidad. Atención a empresas, colegios y universidades. Ademas, dictamos <strong>cursos de tabaquismo, alcoholismo, educación sexual </strong>y todo tipo de temas que son importantes para el cuidado de la salud. <strong>¡Contactanos para solicitar un presupuesto!</strong></p>
-                <form action="post">
-                    <input type="text" placeholder="Ingresá tu nombre y apellido">
-                    <input type="mail" placeholder="Ingresá tu mail">
-                    <input type="text" placeholder="Empresa o institución">
-                    <textarea cols="30" rows="10" placeholder="¿Qué tipo de capacitación buscas?"></textarea>
-                    <input type="submit" value="Enviar"/>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item1">
-                <h4>Medicas Generalistas</h4>
-                <p>
-                Ser Generalistas nos da herramientas para atender a las personas dentro de su ciclo vital.  Creemos y nos formamos entiendo la salud como un concepto integral: somos personas, con sus vivencias, sus creencias, sus medio, sus vínculos y no solamente cuerpos biológicos
-                </p>
-            </div>
-            <div class="footer-item2">
-                <i class="fa-brands fa-instagram" class="iconos-footer"></i></i>
-                
-                <h4><a href="https://www.instagram.com/medicas.generalistas/" target="_blank">¡Seguinos!</a></h4>
-                <p>
-                Encontrarán muchísima información sobre esta especialidad tan linda y sobre temas importantes de salud integral.
-                </p>
-                <i class="fa-regular fa-envelope" class="iconos-footer"></i>
-                <p>medicasgeneralistas@gmail.com</p>
-                <i class="fa-solid fa-location-dot" class="iconos-footer"></i>
-                <p>Avenida 25 de Mayo 460. Lanus. Buenos Aires</p>
-            </div>
+            <!--Navbar desktop start-->
         </div>
-    </footer>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-6 col-sm-12">
+            <div class="galeriaContainer">
+                <div class="galItem galItem1"></div>
+                <div class="galItem galItem2"></div>
+                <div class="galItem galItem3"></div>
+                <div class="galItem galItem4"></div>
+            </div>
+            </aside>
+            <main class="col-lg-6 col-sm-12 mainCap">
+                <h1 class="capTitleCap">Capacitaciones y cursos de RCP</h1>
+                <p>Realizamos <strong>cursos de RCP</strong> didácticos con materiales de primera calidad. Atención a empresas, colegios y universidades. Ademas, dictamos <strong>cursos de tabaquismo, alcoholismo, educación sexual </strong>y todo tipo de temas que son importantes para el cuidado de la salud. <strong>¡Contactanos para solicitar un presupuesto!</strong></p>
+                <form action="post" class="formCap">
+                    <input type="text" placeholder="Ingresá tu nombre y apellido" class="inputCap">
+                    <input type="mail" placeholder="Ingresá tu mail" class="inputCap">
+                    <input type="text" placeholder="Empresa o institución" class="inputCap">
+                    <textarea cols="30" rows="10" placeholder="¿Qué tipo de capacitación buscas?"></textarea>
+                    <input type="submit" value="Enviar" class="boton botonCenter"/>
+                </form>
+            </main>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+        <!--Footer start-->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footerContainer">
+                        <div class="footerIzq">
+                            <h4>Medicas Generalistas</h4>
+                            <p>
+                            Ser Generalistas nos da herramientas para atender a las personas dentro de su ciclo vital. <strong>Creemos y nos formamos entiendo la salud como un concepto integral:</strong> somos personas, con sus vivencias, sus creencias, sus medio, sus vínculos y no solamente cuerpos biológicos
+                            </p>
+                        </div>
+                        <div class="footerDer">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h4><a href="https://www.instagram.com/medicas.generalistas/" target="_blank">¡Seguinos!</a></h4>
+                            <p>
+                            Encontrarán muchísima información sobre esta especialidad tan linda y sobre temas importantes de salud integral.
+                            </p>
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>medicasgeneralistas@gmail.com</p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Avenida 25 de Mayo 460. Lanus. Buenos Aires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer start-->
+        <!--Boopstrap start-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!--Boopstrap end-->
 </body>
 </html>
