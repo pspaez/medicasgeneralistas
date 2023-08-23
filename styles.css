@@ -72,14 +72,26 @@ footer{
 .navMobileContainer{
     height: 70px;
 }
-.navMobile{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/*nav mobile boopestrap*/
+.navbar-toggler{
+    background-color: #c1b8d7 !important;
 }
-.navMobile i{
-    color: #5a189a;
-    font-size: 2em;
+.navbar-dark{
+    background-color: #c1b8d7 !important;
+    height: 70px;
+    width: 100%;
+}
+.navbar-collapse{
+    background-color: #c1b8d7 !important;
+}
+.nav-item{
+    text-align: right;
+    padding: 10px;
+    
+}
+.nav-link{
+    color: #5a189a !important;
+    font-size: 1.4em;
 }
 .navDesktop{
     display: none;
@@ -645,18 +657,31 @@ footer{
         width: 600px;
     }
     /* Vista desktop ¿Que es MG? */
+    .quemgImg{
+        display: flex;
+        justify-content: flex-start;
+    }
     .quemgImg img{
-        width: 75%;
+        width: 350px;
+    }
+    .quemgTitle{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     .quemgTitle h1{
         font-size: 5em;
         text-align: left;
         line-height: 70px;
+        padding-left: 90px; 
     }
     .quemgTxt{
         display: flex;
         justify-content: center;
-        padding: 30px;
+        padding-right: 90px;
+        padding-left: 90px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         width: 100%;
     }
 }
@@ -758,5 +783,28 @@ footer{
     }
     .mainCap h1{
         font-size: 3.5em;
+    }
+     /* Vista desktop ¿Que es MG? */
+    .quemgImg{
+        justify-content: flex-start;
+    }
+    .quemgImg img{
+        width: 500px;
+    }
+    .quemgTitle{
+        justify-content: flex-end;
+    }
+    .quemgTitle h1{
+        font-size: 7em;
+        line-height: 90px;
+        padding-left: 140px; 
+    }
+    .quemgTxt{
+        font-size: 1.3em;
+        padding-right: 140px;
+        padding-left: 140px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
     }
 }
