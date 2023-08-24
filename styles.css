@@ -44,22 +44,22 @@ footer{
     border-radius: 10px;
 }
 .galItem1{
-    background-image: url(media/capacitaciones2.jpg);
+    background-image: url(./media/capacitaciones2.jpg);
     grid-column: 1/2;
     grid-row: 1/3;
 }
 .galItem2{
-    background-image: url(/media/capacitaciones1.jpg);
+    background-image: url(./media/capacitaciones1.jpg);
     grid-column: 2/3;
     grid-row: 1/2;
 }
 .galItem3{
-    background-image: url(/media/capacitaciones3.jpg);
+    background-image: url(./media/capacitaciones3.jpg);
     grid-column: 2/3;
     grid-row: 2/3;
 }
 .galItem4{
-    background-image: url(/media/capacitaciones4.jpg);
+    background-image: url(./media/capacitaciones4.jpg);
     grid-column: 1/3;
     grid-row: 3/4;
 }
