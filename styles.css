@@ -32,6 +32,7 @@ header{
 footer{
     background-color: #5a189a;
     margin-top: 20px;
+    width: 100%;
 }
 /* capacitaciones*/
 .galeriaContainer{
@@ -101,7 +102,7 @@ footer{
 .monoxidoContainer{
     display: grid;
     grid-template-columns: repeat(5, 180px);
-    grid-template-rows: repeat(3, 180px);
+    grid-template-rows: 200px, 160px, 200px;
     justify-content: center;
     gap: 10px;
     padding-top: 50px;
@@ -112,6 +113,8 @@ footer{
     background-size: cover;
     background-position: center;
     border-radius: 10%;
+    width: 300px;
+    height: 300px;
 }
 .titleCap1{
     font-size: 2.8em;
@@ -127,6 +130,9 @@ footer{
 }
 .itemHpv1 p{
     padding-right: 35px;
+}
+.itemHpv3 p{
+    padding-left: 0;
 }
 .txtCap2{
     font-size: 0.8em;
@@ -144,10 +150,31 @@ footer{
     font-size: 20px;
     line-height: 20px;
 }
-.video, video{
-    width: 300px;
+.subTitleMon{
+    font-size: 1.5em;
 }
-
+.itemMon2{
+    display: flex;
+    align-items: flex-end;
+}
+.sectionVideo{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.video, video{
+    width: 250px;
+}
+.video h2{
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.video p{
+    font-size: 0.9em;
+    text-align: justify;
+}
 /* Vista Mobile Home */
 .navMobileContainer{
     height: 70px;
@@ -539,6 +566,9 @@ footer{
     .footerIzq, .footerDer{
         padding: 50px;
     }
+    /* recomendaciones vista tablet*/
+    
+    
     
 }
 
@@ -845,6 +875,18 @@ footer{
         grid-column: 5/6;
         grid-row: 3/4;
     }
+    .videoContainer1{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .videoContainer2{
+        display: flex;
+        justify-content: center;
+    }
+    .videoContainer3{
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 /* Vista Desktop xxxl */
 @media only screen and (min-width:1500px){   
@@ -968,5 +1010,70 @@ footer{
         padding-top: 50px;
         padding-bottom: 50px;
         width: 100%;
+    }
+    /* Vista desktop recomendaciones xxl */
+    .reco1Container, .hpvContainer{
+        display: grid;
+        grid-template-columns: repeat(6, 200px);
+        grid-template-rows: repeat(2, 200px);
+        gap: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .titleCap1{
+        font-size: 4em;
+        line-height: 50px;
+    }
+    .subTitleCap1{
+        font-size: 1.1em;
+        line-height: 40px;
+        padding-top: 15px;
+    }
+    .subTitleHpv{
+        font-size: 1.1em;
+        line-height: 20px;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+    .txtCap2{
+        font-size: 1em;
+        padding: 22px;
+        padding-top: 50px;
+        line-height: 20px;
+    }
+    .itemHpv3 p{
+        padding-left: 0;
+    }
+    .video, video{
+        width: 300px;
+    }
+    .video h2{
+        font-size: 2.3em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .video p{
+        font-size: 1em;
+    }
+    .monoxidoContainer{
+        display: grid;
+        grid-template-columns: repeat(5, 230px);
+        grid-template-rows: 230px, 190px, 230px;
+        gap: 15x;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .itemMon1{
+        width: 400px;
+        height: 400px;
+    }
+    .subTitleMon1{
+        font-size: 1em;
+        font-weight: 600;
+        padding-top: 0px;
+    }
+    .subTitleMon2{
+        padding-top: 20px;
+        font-size: 1.5em;
     }
 }
