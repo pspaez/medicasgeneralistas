@@ -1,684 +1,847 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    color: #5a189a;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: #5a189a;
 }
-header{
-    background-color: #c1b8d7;
-    height: 70px;
+
+/* Variables */
+/* Header & nav */
+header {
+  background-color: #c1b8d7;
+  height: 70px;
 }
-.botonNav{
-    text-decoration: none;
-    background-color: #7e7590;
-    color: #fff;
-    font-size: 0.8em;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 8px;
-    border-radius: 15px;
+
+.botonNav {
+  text-decoration: none;
+  background-color: #7e7590;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 15px;
 }
-.fondoOscuro{
-    background-color: #c1b8d7;
+
+.fondoOscuro {
+  background-color: #c1b8d7;
 }
-.fondoClaro{
-    background: linear-gradient(#fff0f3, #fff);
+
+.fondoClaro {
+  background-image: linear-gradient(#fff0f3, #fff);
 }
-.botonNav:hover{
-    background-color: #5a189a;
-    color: #fff;
+
+.botonNav:hover {
+  background-color: #5a189a;
+  color: #fff;
 }
-footer{
-    background-color: #5a189a;
-    margin-top: 20px;
-    width: 100%;
+
+footer {
+  background-color: #5a189a;
+  margin-top: 20px;
+  width: 100%;
 }
+
 /* capacitaciones*/
-.galeriaContainer{
-    display: grid;
-    gap: 10px;
+.galeriaContainer {
+  display: grid;
+  gap: 10px;
 }
-.galItem{
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+
+.galItem {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
-.galItem1{
-    background-image: url(./media/capacitaciones2.jpg);
-    grid-column: 1/2;
-    grid-row: 1/3;
+
+.galItem1 {
+  background-image: url(./media/capacitaciones2.jpg);
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
-.galItem2{
-    background-image: url(./media/capacitaciones1.jpg);
-    grid-column: 2/3;
-    grid-row: 1/2;
+
+.galItem2 {
+  background-image: url(./media/capacitaciones1.jpg);
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
-.galItem3{
-    background-image: url(./media/capacitaciones3.jpg);
-    grid-column: 2/3;
-    grid-row: 2/3;
+
+.galItem3 {
+  background-image: url(./media/capacitaciones3.jpg);
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
-.galItem4{
-    background-image: url(./media/capacitaciones4.jpg);
-    grid-column: 1/3;
-    grid-row: 3/4;
+
+.galItem4 {
+  background-image: url(./media/capacitaciones4.jpg);
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
-.formCap{
-    display: flex;
-    flex-direction: column;
+
+.formCap {
+  display: flex;
+  flex-direction: column;
 }
+
 /* recomendaciones*/
-.reco1Container{
-    display: grid;
-    grid-template-columns: repeat(6, 150px);
-    grid-template-rows: repeat(2, 150px);
-    justify-content: center;
-    gap: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.reco1Container {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-template-rows: repeat(2, 150px);
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.itemCab1{
-    background-image: url(./media/dolor_cabeza.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10%;
+
+.itemCab1 {
+  background-image: url(./media/dolor_cabeza.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
 }
-.hpvContainer{
-    display: grid;
-    grid-template-columns: repeat(6, 150px);
-    grid-template-rows: repeat(2, 150px);
-    justify-content: center;
-    gap: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+.hpvContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-template-rows: repeat(2, 150px);
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.itemHpv2{
-    background-image: url(./media/hpv.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10%;
+
+.itemHpv2 {
+  background-image: url(./media/hpv.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
 }
-.monoxidoContainer{
-    display: grid;
-    grid-template-columns: repeat(5, 180px);
-    grid-template-rows: 200px, 160px, 200px;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+.monoxidoContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  grid-template-rows: 200px, 160px, 200px;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.itemMon1{
-    background-image: url(./media/monoxido.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
+
+.itemMon1 {
+  background-image: url(./media/monoxido.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
+  width: 300px;
+  height: 300px;
 }
-.titleCap1{
-    font-size: 2.8em;
-    font-weight: 900;
-    line-height: 38px;
+
+.titleCap1 {
+  font-size: 2.8em;
+  font-weight: 900;
+  line-height: 38px;
 }
-.subTitleCap1{
-    font-size: 0.8em;
-    font-weight: 600;
+
+.subTitleCap1 {
+  font-size: 0.8em;
+  font-weight: 600;
 }
-.itemHpv1 h2{
-    padding-top: 35px;
+
+.itemHpv1 h2 {
+  padding-top: 35px;
 }
-.itemHpv1 p{
-    padding-right: 35px;
+
+.itemHpv1 p {
+  padding-right: 35px;
 }
-.itemHpv3 p{
-    padding-left: 0;
+
+.itemHpv3 p {
+  padding-left: 0;
 }
-.txtCap2{
-    font-size: 0.8em;
-    text-align: left;
-    margin: 0, auto;
-    padding: 18px;
-    padding-top: 25px;
-    line-height: 15px;
+
+.txtCap2 {
+  font-size: 0.8em;
+  text-align: left;
+  margin: 0, auto;
+  padding: 18px;
+  padding-top: 25px;
+  line-height: 15px;
 }
-.itemCab2{
-    padding: 18px;
+
+.itemCab2 {
+  padding: 18px;
 }
-.itemHpv5 p{
-    padding-left: 20px;
-    font-size: 20px;
-    line-height: 20px;
+
+.itemHpv5 p {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 20px;
 }
-.subTitleMon{
-    font-size: 1.5em;
+
+.subTitleMon {
+  font-size: 1.5em;
 }
-.itemMon2{
-    display: flex;
-    align-items: flex-end;
+
+.itemMon2 {
+  display: flex;
+  align-items: flex-end;
 }
-.sectionVideo{
-    padding-top: 25px;
-    padding-bottom: 25px;
+
+.sectionVideo {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-.video, video{
-    width: 250px;
+
+.video, video {
+  width: 250px;
 }
-.video h2{
-    font-size: 2em;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+.video h2 {
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.video p{
-    font-size: 0.9em;
-    text-align: justify;
+
+.video p {
+  font-size: 0.9em;
+  text-align: justify;
 }
+
 /* Vista Mobile Home */
-.navMobileContainer{
-    height: 70px;
+.navMobileContainer {
+  height: 70px;
 }
+
 /*nav mobile boopestrap*/
-.navbar-toggler{
-    background-color: #c1b8d7 !important;
+.navbar-toggler {
+  background-color: #c1b8d7 !important;
 }
-.navbar-dark{
-    background-color: #c1b8d7 !important;
-    height: 70px;
-    width: 100%;
+
+.navbar-dark {
+  background-color: #c1b8d7 !important;
+  height: 70px;
+  width: 100%;
 }
-.navbar-collapse{
-    background-color: #c1b8d7 !important;
+
+.navbar-collapse {
+  background-color: #c1b8d7 !important;
 }
-.nav-item{
-    text-align: right;
-    padding: 10px;
-    
+
+.nav-item {
+  text-align: right;
+  padding: 10px;
 }
-.nav-link{
-    color: #5a189a !important;
-    font-size: 1.4em;
+
+.nav-link {
+  color: #5a189a !important;
+  font-size: 1.4em;
 }
-.navDesktop{
-    display: none;
+
+.navDesktop {
+  display: none;
 }
-.bienv1Container{
-    color: #5a189a;
+
+.bienv1Container {
+  color: #5a189a;
 }
-.bienvH1{
-    font-size: 0.9em;
-    text-align: center;
-    margin-top: 20px;
+
+.bienvH1 {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 20px;
 }
-.bienvH1 em{
-    font-weight: 600;
+
+.bienvH1 em {
+  font-weight: 600;
 }
-.bienvH1 span{
-    font-size: 6.5em;
-    font-weight: 900;    
+
+.bienvH1 span {
+  font-size: 6.5em;
+  font-weight: 900;
 }
-.especialidadLink{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
+
+.especialidadLink {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
-.especialidadLink i{
-    font-size: 2.5em;
+
+.especialidadLink i {
+  font-size: 2.5em;
 }
-.especialidadLink h3 a{
-    text-decoration: none;
-    font-size: 1em;
-    display: inline-block;
-    color: #5a189a;
-    line-height: 22px;
-    padding-left: 15px;
+
+.especialidadLink h3 a {
+  text-decoration: none;
+  font-size: 1em;
+  display: inline-block;
+  color: #5a189a;
+  line-height: 22px;
+  padding-left: 15px;
 }
-.imgContainer{
-    display: flex;
-    justify-content: center;
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
 }
-.imgHome{
-    height: 320px;
+
+.imgHome {
+  height: 320px;
 }
-.divLine{
-    background-color: #5a189a;
-    height: 4px;
-    width: 95%;
-    margin: auto;
+
+.divLine {
+  background-color: #5a189a;
+  height: 4px;
+  width: 95%;
+  margin: auto;
 }
-#medicasgeneralistas{
-    font-size: 3em;
-    line-height: 40px;
-    padding-top: 20px;
-    text-align: center;
+
+#medicasgeneralistas {
+  font-size: 3em;
+  line-height: 40px;
+  padding-top: 20px;
+  text-align: center;
 }
-.subtituloMg{
-    font-size: 1em;
-    padding-bottom: 20px;
-    text-align: center;
+
+.subtituloMg {
+  font-size: 1em;
+  padding-bottom: 20px;
+  text-align: center;
 }
-.recoContainer{
-    width: 290px;
-    margin: auto;
+
+.recoContainer {
+  width: 290px;
+  margin: auto;
 }
-.imgMobile{
-    width: 290px;
-    border-radius: 15px;
+
+.imgMobile {
+  width: 290px;
+  border-radius: 15px;
 }
-.recoContainer p{
-    font-size: 0.9em;
-    text-align: justify;
-    padding: 10px;
+
+.recoContainer p {
+  font-size: 0.9em;
+  text-align: justify;
+  padding: 10px;
 }
-.boton{
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 5px;
-    background-color: #5a189a;
-    border-radius: 15px;
-    border: none;
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 290px;
+
+.boton {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px;
+  background-color: #5a189a;
+  border-radius: 15px;
+  border: none;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 290px;
 }
-.capContainer{
-    display: flex;
-    justify-content: center;
+
+.capContainer {
+  display: flex;
+  justify-content: center;
 }
-.capTitle{
-    font-weight: 900;
-    font-size: 2.3em;
-    padding-top: 20px;
-    text-align: center;
+
+.capTitle {
+  font-weight: 900;
+  font-size: 2.3em;
+  padding-top: 20px;
+  text-align: center;
 }
-.capTxt{
-    font-size: 0.9em;
-    text-align: justify;
-    width: 290px;
-    margin: auto;
+
+.capTxt {
+  font-size: 0.9em;
+  text-align: justify;
+  width: 290px;
+  margin: auto;
 }
-.formContainer1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.formContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.formContainer1 h2{
-    font-size: 2.3em;
-    font-weight: 900;
+
+.formContainer1 h2 {
+  font-size: 2.3em;
+  font-weight: 900;
 }
-.comTxt{
-    width: 290px;
+
+.comTxt {
+  width: 290px;
 }
-.inputHome{
-    width: 290px;
-    padding: 5px;
-    margin-top: 10px;
+
+.inputHome {
+  width: 290px;
+  padding: 5px;
+  margin-top: 10px;
 }
+
 /* Vista Mobile Capacitaciones */
-.galeriaContainer{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 300px);
-    gap: 10px;
-    padding-left: 0;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+.galeriaContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 300px);
+  gap: 10px;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
-.galItem1{
-    grid-column: 1/1;
-    grid-row: 1/2;
+
+.galItem1 {
+  grid-column: 1/1;
+  grid-row: 1/2;
 }
-.galItem2{
-    grid-column: 1/1;
-    grid-row: 2/3;
+
+.galItem2 {
+  grid-column: 1/1;
+  grid-row: 2/3;
 }
-.galItem3{
-    grid-column: 1/1;
-    grid-row: 3/4;
+
+.galItem3 {
+  grid-column: 1/1;
+  grid-row: 3/4;
 }
-.galItem4{
-    grid-column: 1/1;
-    grid-row: 4/5;
+
+.galItem4 {
+  grid-column: 1/1;
+  grid-row: 4/5;
 }
-.mainCap h1{
-    font-weight: 900;
-    font-size: 2em;
-    padding: 10px;
+
+.mainCap h1 {
+  font-weight: 900;
+  font-size: 2em;
+  padding: 10px;
 }
-.mainCap p{
-    font-size: 0.9em;
-    text-align: justify;
-    padding: 10px;
+
+.mainCap p {
+  font-size: 0.9em;
+  text-align: justify;
+  padding: 10px;
 }
-.inputCap{
-    width: 100%;
-    padding: 5px;
-    margin-top: 10px;
+
+.inputCap {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
 }
-.formCap textarea{
-    height: 250px;
-    width: 100%;
-    padding: 5px;
-    margin-top: 10px;
+
+.formCap textarea {
+  height: 250px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
 }
-.formHome{
-    text-align: center;
+
+.formHome {
+  text-align: center;
 }
-.footerContainer p, .footerContainer h4,.footerContainer i{
-    color: #fff;
+
+.footerContainer p, .footerContainer h4, .footerContainer i {
+  color: #fff;
 }
-.footerIzq, .footerDer{
-    padding: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+.footerIzq, .footerDer {
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.footerIzq h4{
-    font-size: 2em;
-    font-weight: 200;
-    line-height: 30px;
+
+.footerIzq h4 {
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 30px;
 }
-.footerIzq p{
-    font-size: 0.9em;
-    font-weight: 200;
-    text-align: justify;
+
+.footerIzq p {
+  font-size: 0.9em;
+  font-weight: 200;
+  text-align: justify;
 }
-.footerIzq p strong{
-    color: #fff;
-    font-weight: 400;
+
+.footerIzq p strong {
+  color: #fff;
+  font-weight: 400;
 }
-.footerDer i{
-    font-size: 2em;
+
+.footerDer i {
+  font-size: 2em;
 }
-.footerDer h4 a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.4em;
+
+.footerDer h4 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
 }
+
 /* Vista Mobile ¿Que es MG? */
-.quemgTitle h1{
-    font-weight: 900;
-    font-size: 2.9em;
-    width: 100%;
-    line-height: 45px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.quemgTitle h1 {
+  font-weight: 900;
+  font-size: 2.9em;
+  width: 100%;
+  line-height: 45px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.quemgImg{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+.quemgImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.quemgImg img{
-    width: 280px;
-    border-radius: 50%;
-    border: 6px solid #fff0f3;
+
+.quemgImg img {
+  width: 280px;
+  border-radius: 50%;
+  border: 6px solid #fff0f3;
 }
-.quemgTxt p{
-    font-size: 0.9em;
-    text-align: justify;
-    padding: 20px;
+
+.quemgTxt p {
+  font-size: 0.9em;
+  text-align: justify;
+  padding: 20px;
 }
+
 /* Vista Mobile Recomendaciones */
-.reco1Container{
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 300px, 300px, 300px, 100px, 100px, 100px;
-    justify-content: center;
-    gap: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.reco1Container {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px, 300px, 300px, 100px, 100px, 100px;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.itemCab1{
-    grid-column: 1/2;
-    grid-row: 1/3;
+
+.itemCab1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
-.itemCab2{
-    grid-column: 1/2;
-    grid-row: 3/4;
+
+.itemCab2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
-.itemCab3{
-    grid-column: 1/2;
-    grid-row: 4/5;
+
+.itemCab3 {
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
-.itemCab4{
-    grid-column: 1/2;
-    grid-row: 5/6;
+
+.itemCab4 {
+  grid-column: 1/2;
+  grid-row: 5/6;
 }
-.itemCab5{
-    grid-column: 1/2;
-    grid-row: 6/7;
+
+.itemCab5 {
+  grid-column: 1/2;
+  grid-row: 6/7;
 }
-.itemCab6{
-    grid-column: 1/2;
-    grid-row: 7/8;
+
+.itemCab6 {
+  grid-column: 1/2;
+  grid-row: 7/8;
 }
-.titleCap1{
-    font-size: 2em;
-    line-height: 25px;
+
+.titleCap1 {
+  font-size: 2em;
+  line-height: 25px;
 }
-.subTitleCap1{
-    font-size: 1em;
-    font-weight: 600;
-    padding-top: 10px;
+
+.subTitleCap1 {
+  font-size: 1em;
+  font-weight: 600;
+  padding-top: 10px;
 }
-.itemCab2{
-    padding: 10px;
+
+.itemCab2 {
+  padding: 10px;
 }
-.txtCap2{
-    font-size: 0.9em;
-    text-align: left;
-    margin: 0, auto;
-    padding: 10px;
-    padding-top: 0px;
-    line-height: 15px;
+
+.txtCap2 {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 0, auto;
+  padding: 10px;
+  padding-top: 0px;
+  line-height: 15px;
 }
-.hpvContainer{
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 200px 300px 70px 70px 100px;
-    justify-content: center;
-    gap: 5px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+
+.hpvContainer {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 220px 300px 70px 70px 100px;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
-.itemHpv{
-    padding: 10px;
+
+.itemHpv {
+  padding: 10px;
 }
-.itemHpv1{
-    grid-column: 1/2;
-    grid-row: 1/2;
+
+.itemHpv1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
-.itemHpv2{
-    grid-column: 1/2;
-    grid-row: 2/3;
+
+.itemHpv2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-top: 10px;
 }
-.itemHpv3{
-    grid-column: 1/2;
-    grid-row: 3/4;
+
+.itemHpv3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
-.itemHpv4{
-    grid-column: 1/2;
-    grid-row: 4/5;
+
+.itemHpv4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
-.itemHpv5{
-    grid-column: 1/2;
-    grid-row: 5/6;
+
+.itemHpv5 {
+  grid-column: 1/2;
+  grid-row: 5/6;
 }
-.itemHpv6{
-    grid-column: 1/2;
-    grid-row: 6/7;
+
+.itemHpv6 {
+  grid-column: 1/2;
+  grid-row: 6/7;
 }
-.itemHpv1 h2{
-    padding-top: 0px;
+
+.itemHpv1 h2 {
+  padding-top: 0px;
 }
-.itemHpv1 p{
-    padding-right: 0px;
-    padding-top: 10px;
+
+.itemHpv1 p {
+  padding-right: 0px;
+  padding-top: 10px;
 }
-.itemHpv3 p{
-    padding-top: 20px;
-    font-size: 0,9em;
+
+.itemHpv3 p {
+  padding-top: 20px;
+  font-size: 0, 9em;
 }
-.itemHpv4 p{
-    padding-top: 20px;
-    font-size: 0,9em;
-    margin: 0;
-    margin-top: 20px;
-    padding: 0;
+
+.itemHpv4 p {
+  padding-top: 20px;
+  font-size: 0, 9em;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
 }
-.itemHpv5 p{
-    padding-top: 20px;
+
+.itemHpv5 p {
+  padding-top: 20px;
+}
+
+.sectionVideo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.videoContainer1 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.video, video {
+  width: 300px;
+}
+
+.video h2 {
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.video p {
+  font-size: 0.9em;
+  text-align: justify;
+  padding: 10px;
+}
+
+.monoxidoContainer {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px 160px 190px 70px 70px 70px 70px 70px;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+}
+
+.subTitleMon1, .subTitleMon2 {
+  padding: 10px;
+}
+
+.itemMon1 {
+  padding-bottom: 0;
+}
+
+.itemMon2 h2 {
+  padding: 10px;
 }
 
 /* Vista Tablet Home */
-@media only screen and (min-width:576px){
-    .especialidadLink h3 a{
-        font-size: 0.8em;
-    }
-    .imgContainer{
-        display: flex;
-        justify-content: flex-start;  
-    }
-    .divLine{
-        width: 95%;
-    }
-    #medicasgeneralistas{
-        font-size: 5em;
-        font-weight: 200;
-        margin-top: 20px;
-        line-height: 70px;
-    }
-    .subtituloMg{
-        font-size: 1.38em;
-        margin-top: 20px;
-    }
-    .recoContainer{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    .recoContainer img{
-        width: 70%;
-        margin-top: 20px;
-    }
-    .capContainer{
-        justify-content: flex-end;
-    }
-    .recoContainer p{
-        width: 70%;
-        line-height: 20px;
-    }
-    .botonDesktop{
-        margin: 0;
-        width: 150px;
-    }
-    .cap{
-        margin-top: 50px;
-    }
-    .capContainer1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .imgCap{
-        width: 268px;
-    }
-    .capTitle{
-        font-size: 2em;
-        width: 248px;
-    }
-    .capTxt{
-        font-size: 0.9em;
-        width: 248px;
-        margin: 0px;
-    }
-    .form{
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-    .formContainer1{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-        height: 300px;
-    }
-    .comTitle{
-        font-weight: 900;
-        font-size: 2em;
-        width: 248px;
-    }
-    .comTxt{
-        font-size: 0.9em;
-        width: 248px;
-    }
-    .formHome{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .inputHome{
-        width: 268px;
-    }
-    .formHome textarea{
-        height: 140px;
-    }
-    .boton{
-        margin: 0;
-        margin-top: 20px;
-    }
-    .botonForm{
-        width: 150px;
-    }
-    .botonCenter{
-        margin: auto;
-    }
-    /* Vista Tablet Capacitaciones */
-    .galeriaContainer{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 200px);
-    }
-    .galItem1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .galItem2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .galItem3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .galItem4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .formCap .boton{
-        margin-top: 20px;
-    }
-    .footerContainer{
-        width: 100%;
-        display: flex;
-    }
-    .footerIzq, .footerDer{
-        padding: 50px;
-    }
-    /* recomendaciones vista tablet*/
-    .reco1Container{
+@media only screen and (min-width: 576px) {
+  .especialidadLink h3 a {
+    font-size: 0.8em;
+  }
+  .imgContainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .divLine {
+    width: 95%;
+  }
+  #medicasgeneralistas {
+    font-size: 5em;
+    font-weight: 200;
+    margin-top: 20px;
+    line-height: 70px;
+  }
+  .subtituloMg {
+    font-size: 1.38em;
+    margin-top: 20px;
+  }
+  .recoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .recoContainer img {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .capContainer {
+    justify-content: flex-end;
+  }
+  .recoContainer p {
+    width: 70%;
+    line-height: 20px;
+  }
+  .botonDesktop {
+    margin: 0;
+    width: 150px;
+  }
+  .cap {
+    margin-top: 50px;
+  }
+  .capContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgCap {
+    width: 268px;
+  }
+  .capTitle {
+    font-size: 2em;
+    width: 248px;
+  }
+  .capTxt {
+    font-size: 0.9em;
+    width: 248px;
+    margin: 0px;
+  }
+  .form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .formContainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 300px;
+  }
+  .comTitle {
+    font-weight: 900;
+    font-size: 2em;
+    width: 248px;
+  }
+  .comTxt {
+    font-size: 0.9em;
+    width: 248px;
+  }
+  .formHome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inputHome {
+    width: 268px;
+  }
+  .formHome textarea {
+    height: 140px;
+  }
+  .boton {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .botonForm {
+    width: 150px;
+  }
+  .botonCenter {
+    margin: auto;
+  }
+  /* Vista Tablet Capacitaciones */
+  .galeriaContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+  .galItem1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .galItem2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .galItem3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .galItem4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .formCap .boton {
+    margin-top: 20px;
+  }
+  .footerContainer {
+    width: 100%;
+    display: flex;
+  }
+  .footerIzq, .footerDer {
+    padding: 50px;
+  }
+  /* recomendaciones vista tablet*/
+  .reco1Container {
     display: grid;
     grid-template-columns: repeat(4, 140px);
     grid-template-rows: repeat(3, 140px);
@@ -686,50 +849,48 @@ footer{
     gap: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-    }
-    .itemCab1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .itemCab2{
-        grid-column: 3/5;
-        grid-row: 1/4;
-    }
-    .itemCab3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    
-    .itemCab4{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    
-    .itemCab5{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .itemCab6{
-        grid-column: 4/5;
-        grid-row: 3/4;
-    }
-    .titleCap1{
+  }
+  .itemCab1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .itemCab2 {
+    grid-column: 3/5;
+    grid-row: 1/4;
+  }
+  .itemCab3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .itemCab4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .itemCab5 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .itemCab6 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .titleCap1 {
     font-size: 2em;
     line-height: 28px;
-    }
-    .subTitleCap1{
+  }
+  .subTitleCap1 {
     font-size: 0.9em;
     padding-top: 20px;
-    }
-    .txtCap2{
+  }
+  .txtCap2 {
     font-size: 0.8em;
     text-align: left;
     margin: 0, auto;
     padding: 18px;
     padding-top: 25px;
     line-height: 15px;
-    }
-    .hpvContainer{
+  }
+  .hpvContainer {
     display: grid;
     grid-template-columns: repeat(4, 140px);
     grid-template-rows: repeat(3, 140px);
@@ -737,571 +898,594 @@ footer{
     gap: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
-    }
-    .itemHpv1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .itemHpv2{
-        grid-column: 3/5;
-        grid-row: 1/4;
-    }
-    .itemHpv3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .itemHpv4{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .itemHpv5{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .itemHpv6{
-        grid-column: 4/5;
-        grid-row: 3/4;
-    }
+  }
+  .itemHpv1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .itemHpv2 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  .itemHpv3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .itemHpv4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .itemHpv5 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  .itemHpv6 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .itemHpv1 p {
+    padding-top: 25px;
+  }
+  .videoContainer1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .video, video {
+    width: 190px;
+    padding: 5px;
+  }
+  .video h2 {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .video p {
+    font-size: 0.9em;
+    text-align: justify;
+    padding: 10px;
+  }
 }
-
 /* Vista Desktop */
-@media only screen and (min-width:992px){
-    .navMobile{
-        display: none;
-    }
-    .navDesktop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .listNav{
-        border: 1.5px solid #5a189a;
-        border-radius: 15px;
-        padding: 5px;
-        margin: 0;
-        margin-left: 80px;
-    }
-    .listNav:hover{
-        border: 2.5px solid #5a189a;
-    }
-    .listNav li{
-        list-style: none;
-        display: inline;
-        text-transform: uppercase;
-        padding: 5px;
-    }
-    .listNav li a{
-        text-decoration: none;
-        color: #5a189a;
-    }
-    .listNav li a:hover{
-        font-weight: 600;
-    }
-    .botonNav{
-        margin-right: 80px;
-    }
-    .bienvH1{
-        font-size: 1.3em;
-        margin-top: 100px;
-    }
-    .bienvH1 span{
-        font-size: 7em;  
-    }
-    .especialidadLink i{
-        font-size: 2.5em;
-    }
-    .especialidadLink h3 a{
-        text-decoration: none;
-        font-size: 1em;
-        display: inline-block;
-        color: #5a189a;
-        line-height: 22px;
-        padding-left: 15px;
-    }
-    .imgContainer{
-        justify-content: flex-start;
-    }
-    .imgHome{
-        height: 550px;
-    }
-    .recoContainer img{
-        width: 250px;
-    }
-    .recoContainer p{
-        width: 250px;
-        line-height: 20px;
-    }
-    #medicasgeneralistas{
-        font-size: 6em;
-    }
-    .subtituloMg{
-        font-size: 1.6em;
-    }
-    .cap{
-        padding-top: 70px;
-    }
-    .capContainer1{
-        justify-content: flex-end;
-    }
-    .imgCap{
-        width: 450px;
-        height: 300px;
-        border-radius: 30px;
-        background-size: cover;
-    }
-    .capTitle{
-        font-size: 3em;
-        width: 400px;
-        margin-top: 30px;
-        margin-left: 10px;
-    }
-    .capTxt{
-        font-size: 0.9em;
-        width: 400px;
-        margin: 0px;
-        margin-left: 30px;
-    }
-    .formContainer1 h2{
-        font-size: 3em;
-        width: 450px;
-        font-weight: 900;
-    }
-    .comTxt{
-        font-size: 0.9em;
-        width: 450px;
-    }
-    .formContainer1{
-        justify-content: center;
-    }
-    .formHome{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .inputHome{
-        width: 450px;
-    }
-    .formHome textarea{
-        height: 200px;
-    }
-    .boton{
-        margin: 0;
-        margin-top: 20px;
-    }
-    .botonCenter{
-        margin: auto;
-    }
-    .botonDesktop{
-        margin-left: 30px;
-        margin-top: 50px;
-    }
-     /* Vista Desktop Capacitaciones */
-    .galeriaContainer{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 200px);
-        padding: 60px;
-        padding-right: 20px;
-    }
-    .galItem{
-        background-position: top;
-    }
-    .galItem1{
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-    .galItem2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .galItem3{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .galItem4{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    .mainCap{
-        padding: 50px;
-        padding-left: 20px;
-    }
-    .formCap .boton{
-        margin-top: 50px;
-    }
-    .formCap textarea{
-        height: 150px;
-        margin-top: 10px;
-    }
-    .formCap .boton{
-        margin: 0;
-        margin-top: 20px;
-        width: 150px;
-    }
-    .inputCap{
-        width: 90%;
-    }
-    .formCap textarea{
-        height: 200px;
-        width: 90%;
-    }
-    .mainCap h1, .mainCap p{
-        padding: 0px;
-        width: 90%;
-    }
-    .footerContainer{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .footerIzq, .footerDer{
-        padding: 50px;
-        width: 600px;
-    }
-    /* Vista desktop ¿Que es MG? */
-    .quemgImg{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .quemgImg img{
-        width: 350px;
-    }
-    .quemgTitle{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .quemgTitle h1{
-        font-size: 5em;
-        text-align: left;
-        line-height: 70px;
-        padding-left: 90px; 
-    }
-    .quemgTxt{
-        display: flex;
-        justify-content: center;
-        padding-right: 90px;
-        padding-left: 90px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 100%;
-    }
-     /* Vista Desktop recomendiaciones */
-    .reco1Container{
-        display: grid;
-        grid-template-columns: repeat(6, 150px);
-        grid-template-rows: repeat(2, 150px);
-        justify-content: center;
-        gap: 10px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .itemCab1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .itemCab2{
-        grid-column: 3/7;
-        grid-row: 1/2;
-    }
-    .itemCab3{
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .itemCab4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    .itemCab5{
-        grid-column: 5/6;
-        grid-row: 2/3;
-    }
-    .itemCab6{
-        grid-column: 6/7;
-        grid-row: 2/3;
-    }
-    .titleCap1{
-        font-size: 2.8em;
-        font-weight: 900;
-        line-height: 38px;
-    }
-    .subTitleCap1{
-        font-size: 0.8em;
-        font-weight: 600;
-        padding-top: 0;
-    }
-    .txtCap2{
-        font-size: 0.8em;
-        text-align: left;
-        margin: 0, auto;
-        padding: 18px;
-        padding-top: 25px;
-        line-height: 15px;
-    }
-    .hpvContainer{
-        display: grid;
-        grid-template-columns: repeat(6, 150px);
-        grid-template-rows: repeat(2, 150px);
-        justify-content: center;
-        gap: 10px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .itemHpv1{
-        grid-column: 1/5;
-        grid-row: 1/2;
-    }
-    .itemHpv2{
-        grid-column: 5/7;
-        grid-row: 1/3;
-    }
-    .itemHpv3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .itemHpv4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .itemHpv5{
-        grid-column: 3/5;
-        grid-row: 2/3;
-    }
-    .itemHpv6{
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    .itemMon1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .itemMon2{
-        grid-column: 3/6;
-        grid-row: 1/2;
-    }
-    .itemMon3{
-        grid-column: 3/6;
-        grid-row: 2/3;
-    }
-    .itemMon4{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .itemMon5{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .itemMon6{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .itemMon7{
-        grid-column: 4/5;
-        grid-row: 3/4;
-    }
-    .itemMon7{
-        grid-column: 5/6;
-        grid-row: 3/4;
-    }
-    .videoContainer1{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .videoContainer2{
-        display: flex;
-        justify-content: center;
-    }
-    .videoContainer3{
-        display: flex;
-        justify-content: flex-start;
-    }
+@media only screen and (min-width: 992px) {
+  .navMobile {
+    display: none;
+  }
+  .navDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .listNav {
+    border: 1.5px solid #5a189a;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0;
+    margin-left: 80px;
+  }
+  .listNav:hover {
+    border: 2.5px solid #5a189a;
+  }
+  .listNav li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  .listNav li a {
+    text-decoration: none;
+    color: #5a189a;
+  }
+  .listNav li a:hover {
+    font-weight: 600;
+  }
+  .botonNav {
+    margin-right: 80px;
+  }
+  .bienvH1 {
+    font-size: 1.3em;
+    margin-top: 100px;
+  }
+  .bienvH1 span {
+    font-size: 7em;
+  }
+  .especialidadLink i {
+    font-size: 2.5em;
+  }
+  .especialidadLink h3 a {
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    color: #5a189a;
+    line-height: 22px;
+    padding-left: 15px;
+  }
+  .imgContainer {
+    justify-content: flex-start;
+  }
+  .imgHome {
+    height: 550px;
+  }
+  .recoContainer img {
+    width: 250px;
+  }
+  .recoContainer p {
+    width: 250px;
+    line-height: 20px;
+  }
+  #medicasgeneralistas {
+    font-size: 6em;
+  }
+  .subtituloMg {
+    font-size: 1.6em;
+  }
+  .cap {
+    padding-top: 70px;
+  }
+  .capContainer1 {
+    justify-content: flex-end;
+  }
+  .imgCap {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+  }
+  .capTitle {
+    font-size: 3em;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .capTxt {
+    font-size: 0.9em;
+    width: 400px;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .formContainer1 h2 {
+    font-size: 3em;
+    width: 450px;
+    font-weight: 900;
+  }
+  .comTxt {
+    font-size: 0.9em;
+    width: 450px;
+  }
+  .formContainer1 {
+    justify-content: center;
+  }
+  .formHome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inputHome {
+    width: 450px;
+  }
+  .formHome textarea {
+    height: 200px;
+  }
+  .boton {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .botonCenter {
+    margin: auto;
+  }
+  .botonDesktop {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  /* Vista Desktop Capacitaciones */
+  .galeriaContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    padding: 60px;
+    padding-right: 20px;
+  }
+  .galItem {
+    background-position: top;
+  }
+  .galItem1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .galItem2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .galItem3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .galItem4 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .mainCap {
+    padding: 50px;
+    padding-left: 20px;
+  }
+  .formCap .boton {
+    margin-top: 50px;
+  }
+  .formCap textarea {
+    height: 150px;
+    margin-top: 10px;
+  }
+  .formCap .boton {
+    margin: 0;
+    margin-top: 20px;
+    width: 150px;
+  }
+  .inputCap {
+    width: 90%;
+  }
+  .formCap textarea {
+    height: 200px;
+    width: 90%;
+  }
+  .mainCap h1, .mainCap p {
+    padding: 0px;
+    width: 90%;
+  }
+  .footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footerIzq, .footerDer {
+    padding: 50px;
+    width: 600px;
+  }
+  /* Vista desktop ¿Que es MG? */
+  .quemgImg {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .quemgImg img {
+    width: 350px;
+  }
+  .quemgTitle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .quemgTitle h1 {
+    font-size: 5em;
+    text-align: left;
+    line-height: 70px;
+    padding-left: 90px;
+  }
+  .quemgTxt {
+    display: flex;
+    justify-content: center;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  /* Vista Desktop recomendiaciones */
+  .reco1Container {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(2, 150px);
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .itemCab1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .itemCab2 {
+    grid-column: 3/7;
+    grid-row: 1/2;
+  }
+  .itemCab3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .itemCab4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .itemCab5 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+  .itemCab6 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
+  .titleCap1 {
+    font-size: 2.8em;
+    font-weight: 900;
+    line-height: 38px;
+  }
+  .subTitleCap1 {
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 0;
+  }
+  .txtCap2 {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 0, auto;
+    padding: 18px;
+    padding-top: 25px;
+    line-height: 15px;
+  }
+  .hpvContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(2, 150px);
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .itemHpv1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  .itemHpv2 {
+    grid-column: 5/7;
+    grid-row: 1/3;
+  }
+  .itemHpv3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .itemHpv4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .itemHpv5 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .itemHpv6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .itemMon1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .itemMon2 {
+    grid-column: 3/6;
+    grid-row: 1/2;
+  }
+  .itemMon3 {
+    grid-column: 3/6;
+    grid-row: 2/3;
+  }
+  .itemMon4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .itemMon5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .itemMon6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .itemMon7 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .itemMon7 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  .videoContainer1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .videoContainer2 {
+    display: flex;
+    justify-content: center;
+  }
+  .videoContainer3 {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 /* Vista Desktop xxxl */
-@media only screen and (min-width:1500px){   
-    
-    .bienvH1{
-        font-size: 2em;
-        margin-top: 150px;
-    }
-    .bienvH1 span{
-        font-size: 7em;  
-    }
-    .especialidadLink{
-        padding-top: 50px;
-    }
-    .especialidadLink i{
-        font-size: 5em;
-    }
-    .especialidadLink h3 a{
-        text-decoration: none;
-        font-size: 1.5em;
-        display: inline-block;
-        color: #5a189a;
-        line-height: 40px;
-        padding-left: 30px;
-    }
-    .imgHome{
-        height: 850px;
-    }
-    #medicasgeneralistas{
-        font-size: 9em;
-        margin-top: 40px;
-    }
-    .subtituloMg{
-        font-size: 2em;
-        margin-top: 45px;
-        letter-spacing: 4px;
-    }
-    .recoContainer img{
-        width: 300px;
-        margin-top: 40px;
-    }
-    .recoContainer p{
-        width: 300px;
-        line-height: 30px;
-        font-size: 1.22em;
-    }
-    .imgCap{
-        width: 600px;
-        height: 400px;
-        border-radius: 40px;
-    }
-    .capTitle{
-        font-size: 4em;
-        width: 500px;
-        margin-top: 60px;
-        margin-left: 30px;
-    }
-    .capTxt{
-        font-size: 1.22em;
-        width: 600px;
-        margin: 0px;
-        margin-left: 30px;
-    }
-    .formContainer1 h2{
-        font-size: 4em;
-        width: 600px;
-    }
-    .comTxt{
-        font-size: 1.22em;
-        width: 600px;
-    }
-    .inputHome{
-        width: 600px;
-    }
-    .listNav{
-        margin-left: 150px;
-    }
-    .botonNav{
-        margin-right: 150px;
-    }
-    /* Vista Desktop xxl Capacitaciones */
-    .galeriaContainer{
-        grid-template-rows: repeat(3, 250px);
-        padding-left: 150px;
-    }
-    .mainCap{
-        padding-left: 50px;
-    }
-    .inputCap{
-        width: 70%;
-    }
-    .formCap textarea{
-        height: 300px;
-        width: 70%;
-    }
-    .mainCap h1,.mainCap p{
-        width: 70%;
-    }
-    .mainCap h1{
-        font-size: 3.5em;
-    }
-     /* Vista desktop ¿Que es MG? */
-    .quemgImg{
-        justify-content: flex-start;
-    }
-    .quemgImg img{
-        width: 500px;
-    }
-    .quemgTitle{
-        justify-content: flex-end;
-    }
-    .quemgTitle h1{
-        font-size: 7em;
-        line-height: 90px;
-        padding-left: 140px; 
-    }
-    .quemgTxt{
-        font-size: 1.3em;
-        padding-right: 140px;
-        padding-left: 140px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 100%;
-    }
-    /* Vista desktop recomendaciones xxl */
-    .reco1Container, .hpvContainer{
-        display: grid;
-        grid-template-columns: repeat(6, 200px);
-        grid-template-rows: repeat(2, 200px);
-        gap: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .titleCap1{
-        font-size: 4em;
-        line-height: 50px;
-    }
-    .subTitleCap1{
-        font-size: 1.1em;
-        line-height: 40px;
-        padding-top: 15px;
-    }
-    .subTitleHpv{
-        font-size: 1.1em;
-        line-height: 20px;
-        font-weight: 600;
-        padding-top: 15px;
-    }
-    .txtCap2{
-        font-size: 1em;
-        padding: 22px;
-        padding-top: 50px;
-        line-height: 20px;
-    }
-    .itemHpv3 p{
-        padding-left: 0;
-    }
-    .video, video{
-        width: 300px;
-    }
-    .video h2{
-        font-size: 2.3em;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .video p{
-        font-size: 1em;
-    }
-    .monoxidoContainer{
-        display: grid;
-        grid-template-columns: repeat(5, 230px);
-        grid-template-rows: 230px, 190px, 230px;
-        gap: 15x;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .itemMon1{
-        width: 400px;
-        height: 400px;
-    }
-    .subTitleMon1{
-        font-size: 1em;
-        font-weight: 600;
-        padding-top: 0px;
-    }
-    .subTitleMon2{
-        padding-top: 20px;
-        font-size: 1.5em;
-    }
-}
+@media only screen and (min-width: 1500px) {
+  .bienvH1 {
+    font-size: 2em;
+    margin-top: 150px;
+  }
+  .bienvH1 span {
+    font-size: 7em;
+  }
+  .especialidadLink {
+    padding-top: 50px;
+  }
+  .especialidadLink i {
+    font-size: 5em;
+  }
+  .especialidadLink h3 a {
+    text-decoration: none;
+    font-size: 1.5em;
+    display: inline-block;
+    color: #5a189a;
+    line-height: 40px;
+    padding-left: 30px;
+  }
+  .imgHome {
+    height: 850px;
+  }
+  #medicasgeneralistas {
+    font-size: 9em;
+    margin-top: 40px;
+  }
+  .subtituloMg {
+    font-size: 2em;
+    margin-top: 45px;
+    letter-spacing: 4px;
+  }
+  .recoContainer img {
+    width: 300px;
+    margin-top: 40px;
+  }
+  .recoContainer p {
+    width: 300px;
+    line-height: 30px;
+    font-size: 1.22em;
+  }
+  .imgCap {
+    width: 600px;
+    height: 400px;
+    border-radius: 40px;
+  }
+  .capTitle {
+    font-size: 4em;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+  .capTxt {
+    font-size: 1.22em;
+    width: 600px;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .formContainer1 h2 {
+    font-size: 4em;
+    width: 600px;
+  }
+  .comTxt {
+    font-size: 1.22em;
+    width: 600px;
+  }
+  .inputHome {
+    width: 600px;
+  }
+  .listNav {
+    margin-left: 150px;
+  }
+  .botonNav {
+    margin-right: 150px;
+  }
+  /* Vista Desktop xxl Capacitaciones */
+  .galeriaContainer {
+    grid-template-rows: repeat(3, 250px);
+    padding-left: 150px;
+  }
+  .mainCap {
+    padding-left: 50px;
+  }
+  .inputCap {
+    width: 70%;
+  }
+  .formCap textarea {
+    height: 300px;
+    width: 70%;
+  }
+  .mainCap h1, .mainCap p {
+    width: 70%;
+  }
+  .mainCap h1 {
+    font-size: 3.5em;
+  }
+  /* Vista desktop ¿Que es MG? */
+  .quemgImg {
+    justify-content: flex-start;
+  }
+  .quemgImg img {
+    width: 500px;
+  }
+  .quemgTitle {
+    justify-content: flex-end;
+  }
+  .quemgTitle h1 {
+    font-size: 7em;
+    line-height: 90px;
+    padding-left: 140px;
+  }
+  .quemgTxt {
+    font-size: 1.3em;
+    padding-right: 140px;
+    padding-left: 140px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  /* Vista desktop recomendaciones xxl */
+  .reco1Container, .hpvContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .titleCap1 {
+    font-size: 4em;
+    line-height: 50px;
+  }
+  .subTitleCap1 {
+    font-size: 1.1em;
+    line-height: 40px;
+    padding-top: 15px;
+  }
+  .subTitleHpv {
+    font-size: 1.1em;
+    line-height: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+  }
+  .txtCap2 {
+    font-size: 1em;
+    padding: 22px;
+    padding-top: 50px;
+    line-height: 20px;
+  }
+  .itemHpv3 p {
+    padding-left: 0;
+  }
+  .video, video {
+    width: 300px;
+  }
+  .video h2 {
+    font-size: 2.3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .video p {
+    font-size: 1em;
+  }
+  .monoxidoContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 230px);
+    grid-template-rows: 230px, 190px, 230px;
+    gap: 15x;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .itemMon1 {
+    width: 400px;
+    height: 400px;
+  }
+  .subTitleMon1 {
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0px;
+  }
+  .subTitleMon2 {
+    padding-top: 20px;
+    font-size: 1.5em;
+  }
+}/*# sourceMappingURL=styles.css.map */
