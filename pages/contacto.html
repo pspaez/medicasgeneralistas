@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <!--Google fonts end-->
     </head>
-    <body>
+    <body class="fondoOscuro">
         <header class="container-fluid"> 
             <div class="row navMobileContainer">
                 <!--Navbar mobile start-->
@@ -60,42 +60,58 @@
                 <!--Navbar desktop end-->
             </div>
         </header>
-    <main>
-        <section class="lym-container">
-            <div class="lym-item1">
-                <img src="../media/lulu_negri.jpg" alt="foto de lucila negri">
-                <h3>Lucila Negri</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni libero voluptatum numquam voluptate quod pariatur quibusdam facilis excepturi rerum accusantium unde minus labore consectetur, ab ratione voluptatem necessitatibus. Velit?</p>
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-lg-12 col-sm-12">
+                    <section class="lymContainer">
+                        <div class="lymItem lymItem1">
+                            <img src="../media/lulu_negri.jpg" alt="foto de lucila negri">
+                            <h3>Lucila Negri</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni libero voluptatum numquam voluptate quod pariatur quibusdam facilis excepturi rerum accusantium unde minus labore consectetur, ab ratione voluptatem necessitatibus. Velit?</p>
+                        </div>
+                        <div class="lymItem lymItem2">
+                            <img src="../media/melanie.jpg" alt="foto de melanie">
+                            <h3>Melanie Chafer</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas neque delectus facere natus architecto tempora dicta enim ullam illo, quo laboriosam veritatis maxime corporis similique aut nemo dolor. Harum, facilis.</p>
+                        </div>
+                    </section>
+                </main>
             </div>
-            <div class="lym-item2">
-                <img src="../media/melanie.jpg" alt="foto de melanie">
-                <h3>Melanie CHafer</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas neque delectus facere natus architecto tempora dicta enim ullam illo, quo laboriosam veritatis maxime corporis similique aut nemo dolor. Harum, facilis.</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-lg-12 col-sm-12">
+                    <section class="contactoContainer">
+                        <h1>¿Consultas?</h1>
+                        <h2>Dejanos tu consulta y nos comunicaremos a la brevedad para agendar un turno.</h2>
+                        <form action="post" class="formContacto">
+                            <input type="text" name="nombre"  placeholder="Ingresá tu Nombre y Apellido" class="formItem">
+                            <input type="mail" name="mail" placeholder="Ingresá tu Mail" class="formItem">
+                            <input type="text" name="telefono" placeholder="Ingresá tu teléfono" class="formItem">
+                            <input type="text" name="direccion" placeholder="Ingresá tu Dirección" class="formItem">
+                            <textarea name="Ingresá el motivo de tu consulta." placeholder="ingresá el motivo de tu consulta" class="formItem"></textarea>
+                            <input type="submit" value="Enviar" class="boton">
+                        </form>
+                    </section>
+                </main>
             </div>
-        </section>
-        <section class="contacto-container">
-            <h1>¿Consultas?</h1>
-            <h2>Dejanos tu consulta y nos comunicaremos para agendar un turno</h2>
-            <form action="post">
-                <input type="text" name="nombre"  placeholder="Ingresá tu Nombre y Apellido">
-                <input type="mail" name="mail" placeholder="Ingresá tu Mail">
-                <input type="text" name="telefono" placeholder="Ingresá tu teléfono">
-                <input type="text" name="direccion" placeholder="Ingresá tu Dirección">
-                <textarea name="Ingresá el motivo de tu consulta." placeholder="ingresá el motivo de tu consulta"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-        <section class="mapa-container">
-            <div class="mapa-item1">
-                <h3>COnsultorio</h3>
-                <p>Avenida 25 de Mayo 460. Lanus. Buenos Aires.</p>
-                <p>¡Te esperamos!</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-lg-12 col-sm-12">
+                    <section class="mapaContainer">
+                        <div class="mapaItem1">
+                            <h3>Consultorio</h3>
+                            <p>Avenida 25 de Mayo 460. Lanus. Buenos Aires.</p>
+                            <p>¡Te esperamos!</p>
+                        </div>
+                        <div class="mapaItem2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8979240527665!2d-58.400852923749504!3d-34.70775446300088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd193b848079%3A0xae513df56507a7bd!2sAv.%2025%20de%20Mayo%20460%2C%20C1002ABJ%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694205467906!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </section>
+                </main>
             </div>
-            <div class="mapa-item2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8979240527474!2d-58.40085292355476!3d-34.707754463001365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd193b848079%3A0xae513df56507a7bd!2sAv.%2025%20de%20Mayo%20460%2C%20C1002ABJ%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1690760042250!5m2!1sen!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    </main>
+        </div>
     <!--Footer start-->
     <footer class="container-fluid">
         <div class="row">

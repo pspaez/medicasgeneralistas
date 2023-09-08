@@ -8,6 +8,14 @@
 }
 
 /* Variables */
+.fondoOscuro {
+  background-color: #c1b8d7;
+}
+
+.fondoClaro {
+  background-image: linear-gradient(#fff0f3, #fff);
+}
+
 /* Header & nav */
 header {
   background-color: #c1b8d7;
@@ -23,14 +31,6 @@ header {
   text-transform: uppercase;
   padding: 8px;
   border-radius: 15px;
-}
-
-.fondoOscuro {
-  background-color: #c1b8d7;
-}
-
-.fondoClaro {
-  background-image: linear-gradient(#fff0f3, #fff);
 }
 
 .botonNav:hover {
@@ -655,13 +655,11 @@ footer {
 .sectionVideo {
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.videoContainer1 {
-  flex-direction: column;
-  align-items: center;
+  width: 300px;
+  height: auto;
+  display: flex;
   justify-content: center;
-  margin: auto;
+  align-items: center;
 }
 
 .video, video {
@@ -685,7 +683,7 @@ footer {
 .monoxidoContainer {
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: 300px 160px 190px 70px 70px 70px 70px 70px;
+  grid-template-rows: 300px 150px 150px 70px 70px 70px 70px;
   justify-content: center;
   gap: 5px;
   padding-top: 0px;
@@ -693,7 +691,11 @@ footer {
 }
 
 .subTitleMon1, .subTitleMon2 {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #7e7590;
 }
 
 .itemMon1 {
@@ -702,6 +704,114 @@ footer {
 
 .itemMon2 h2 {
   padding: 10px;
+}
+
+.itemMon4 p, .itemMon5 p, .itemMon6 p, .itemMon7 p {
+  color: #7e7590;
+  font-size: 0.9em;
+}
+
+/* Vista Mobile Contacto */
+.lymContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lymContainer .lymItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.lymContainer .lymItem img {
+  border-radius: 50%;
+  border: solid 2px #fff;
+  width: 280px;
+}
+.lymContainer .lymItem h3 {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.lymContainer .lymItem p {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+  padding: 10px;
+}
+.lymContainer .lymItem1 {
+  padding-top: 30px;
+}
+
+.contactoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactoContainer h1 {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.contactoContainer h2 {
+  font-size: 18px;
+  font-weight: 600;
+  width: 300px;
+  text-align: justify;
+  padding: 10px;
+}
+.contactoContainer .formContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.contactoContainer .formContacto input {
+  width: 300px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.contactoContainer .formContacto textarea {
+  width: 300px;
+  height: 200px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.mapaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 300px;
+}
+.mapaContainer .mapaItem1 {
+  width: 300px;
+}
+.mapaContainer .mapaItem1 h3 {
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 15px;
+}
+.mapaContainer .mapaItem1 p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.mapaContainer .mapItem2 {
+  width: 300px;
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.mapaContainer iframe {
+  width: 300px;
+  height: 200px;
 }
 
 /* Vista Tablet Home */
@@ -840,6 +950,60 @@ footer {
   .footerIzq, .footerDer {
     padding: 50px;
   }
+  /* Vista Tablet Contacto */
+  .lymContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .lymContainer .lymItem {
+    width: 250px;
+  }
+  .lymContainer .lymItem img {
+    width: 250px;
+  }
+  .lymContainer .lymItem h3 {
+    font-size: 30px;
+  }
+  .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contactoContainer h1 {
+    font-size: 85px;
+  }
+  .contactoContainer h2 {
+    width: 90%;
+  }
+  .contactoContainer .formContacto {
+    width: 100%;
+  }
+  .contactoContainer .formContacto input {
+    width: 90%;
+  }
+  .contactoContainer .formContacto textarea {
+    width: 90%;
+  }
+  .contactoContainer .formContacto .boton {
+    width: 300px;
+  }
+  .mapaContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding-top: 50px;
+  }
+  .mapaContainer .mapaItem1 {
+    width: 90%;
+  }
+  .mapaContainer .mapaItem1 h3 {
+    padding-top: 35px;
+    margin: auto;
+  }
   /* recomendaciones vista tablet*/
   .reco1Container {
     display: grid;
@@ -947,6 +1111,53 @@ footer {
     font-size: 0.9em;
     text-align: justify;
     padding: 10px;
+  }
+  .monoxidoContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(3, 140px);
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .itemMon1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .itemMon2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .itemMon3 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .itemMon4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .itemMon5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .itemMon6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .itemMon7 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .subTitleMon1, .subTitleMon2 {
+    padding-left: 25px;
+    padding-right: 0px;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #7e7590;
+  }
+  .itemMon2 h2 {
+    padding: 25px;
   }
 }
 /* Vista Desktop */
@@ -1171,6 +1382,76 @@ footer {
     padding-bottom: 50px;
     width: 100%;
   }
+  /* Vista Desktop contacto */
+  .lymContainer {
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  .lymContainer .lymItem {
+    width: 350px;
+  }
+  .lymContainer .lymItem img {
+    width: 350px;
+  }
+  .lymContainer .lymItem h3 {
+    font-size: 40px;
+  }
+  .contactoContainer h1 {
+    font-size: 135px;
+  }
+  .contactoContainer h2 {
+    font-size: 21px;
+    font-weight: 600;
+    width: auto;
+    text-align: center;
+  }
+  .contactoContainer .formContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-top: 50px;
+  }
+  .contactoContainer .formContacto input {
+    width: 800px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .contactoContainer .formContacto textarea {
+    width: 800px;
+    height: 200px;
+    padding: 5px;
+    margin: 10px;
+  }
+  .mapaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+  }
+  .mapaContainer .mapaItem1 {
+    width: 300px;
+  }
+  .mapaContainer .mapaItem1 h3 {
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .mapaContainer .mapaItem1 p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .mapaContainer .mapItem2 {
+    width: 800px;
+  }
+  .mapaContainer iframe {
+    width: 800px;
+    height: 300px;
+    padding-top: 30px;
+  }
   /* Vista Desktop recomendiaciones */
   .reco1Container {
     display: grid;
@@ -1291,6 +1572,7 @@ footer {
   .videoContainer1 {
     display: flex;
     justify-content: flex-end;
+    padding-top: 0;
   }
   .videoContainer2 {
     display: flex;
@@ -1299,6 +1581,58 @@ footer {
   .videoContainer3 {
     display: flex;
     justify-content: flex-start;
+  }
+  .monoxidoContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: 100px 40px 160px;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .itemMon1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  .itemMon2 {
+    grid-column: 3/7;
+    grid-row: 1/2;
+  }
+  .itemMon3 {
+    grid-column: 3/7;
+    grid-row: 2/3;
+  }
+  .itemMon4 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .itemMon5 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .itemMon6 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  .itemMon6 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+  .itemMon2 h2 {
+    padding: 0;
+  }
+  .subTitleMon1, .subTitleMon2 {
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+  }
+  .subTitleMon1 {
+    margin-top: 20px;
+  }
+  .txtCap2--mon {
+    padding: 10px;
+    padding-top: 50px;
   }
 }
 /* Vista Desktop xxxl */
@@ -1456,6 +1790,9 @@ footer {
   .itemHpv3 p {
     padding-left: 0;
   }
+  .videoContainer1 {
+    padding-top: 0;
+  }
   .video, video {
     width: 300px;
   }
@@ -1469,23 +1806,64 @@ footer {
   }
   .monoxidoContainer {
     display: grid;
-    grid-template-columns: repeat(5, 230px);
-    grid-template-rows: 230px, 190px, 230px;
-    gap: 15x;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 166px 100px 133px;
+    justify-content: center;
+    gap: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .itemMon1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  .itemMon2 {
+    grid-column: 3/7;
+    grid-row: 1/2;
+  }
+  .itemMon3 {
+    grid-column: 3/7;
+    grid-row: 2/3;
+  }
+  .itemMon4 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .itemMon5 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .itemMon6 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  .itemMon6 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+  .itemMon2 h2 {
+    padding: 0;
+    padding-left: 20px;
+  }
+  .subTitleMon1, .subTitleMon2 {
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #5a189a;
+  }
+  .subTitleMon1 {
+    margin-top: 20px;
+  }
+  .txtCap2--mon {
+    padding: 10px;
   }
   .itemMon1 {
     width: 400px;
     height: 400px;
   }
-  .subTitleMon1 {
-    font-size: 1em;
-    font-weight: 600;
-    padding-top: 0px;
+  .itemMon4 {
+    margin-left: 20px;
   }
-  .subTitleMon2 {
-    padding-top: 20px;
-    font-size: 1.5em;
-  }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
