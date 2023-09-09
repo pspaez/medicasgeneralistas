@@ -41,6 +41,8 @@ color: $font-color;
 header {
   background-color: $base-color;
   height: 70px;
+  position: relative;
+  z-index: 10;
 }
 .botonNav {
   text-decoration: none;
@@ -60,6 +62,9 @@ footer {
   background-color: $font-color;
   margin-top: 20px;
   width: 100%;
+}
+.spaceNav{
+  margin-top: 70px;
 }
 /* capacitaciones*/
 .galeriaContainer {

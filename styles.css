@@ -20,6 +20,8 @@
 header {
   background-color: #c1b8d7;
   height: 70px;
+  position: relative;
+  z-index: 10;
 }
 
 .botonNav {
@@ -42,6 +44,10 @@ footer {
   background-color: #5a189a;
   margin-top: 20px;
   width: 100%;
+}
+
+.spaceNav {
+  margin-top: 70px;
 }
 
 /* capacitaciones*/
