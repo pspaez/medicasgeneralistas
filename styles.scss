@@ -1,12 +1,4 @@
 @charset "UTF-8";
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Raleway", sans-serif;
-color: #5a189a;
-}
-
 /* Variables */
 $font-color: #5a189a;
 $base-color: #c1b8d7;
@@ -22,14 +14,29 @@ $txt-mobile: 15px;
 $title-tablet: 30px;
 $title-desktop: 40px;
 $subtitle-desktop: 21px;
-
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Raleway", sans-serif;
+color: $font-color;
+}
+@mixin flex-row-center{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+@mixin flex-column-center{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
 .fondoOscuro {
-  background-color: $base-color;
+  background-color: #c1b8d7;
 }
 .fondoClaro {
   background-image: $base-color-gradient;
 }
-
 /* Header & nav */
 header {
   background-color: $base-color;
@@ -37,8 +44,8 @@ header {
 }
 .botonNav {
   text-decoration: none;
-  background-color: #7e7590;
-  color: #fff;
+  background-color: $dark-color;
+  color: $light-color;
   font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
@@ -46,11 +53,11 @@ header {
   border-radius: 15px;
 }
 .botonNav:hover {
-  background-color: #5a189a;
+  background-color: $font-color;
   color: #fff;
 }
 footer {
-  background-color: #5a189a;
+  background-color: $font-color;
   margin-top: 20px;
   width: 100%;
 }
@@ -69,30 +76,25 @@ footer {
   grid-column: 1/2;
   grid-row: 1/3;
 }
-
 .galItem2 {
   background-image: url(./media/capacitaciones1.jpg);
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
 .galItem3 {
   background-image: url(./media/capacitaciones3.jpg);
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
 .galItem4 {
   background-image: url(./media/capacitaciones4.jpg);
   grid-column: 1/3;
   grid-row: 3/4;
 }
-
 .formCap {
   display: flex;
   flex-direction: column;
 }
-
 /* recomendaciones*/
 .reco1Container {
   display: grid;
@@ -103,14 +105,12 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 .itemCab1 {
   background-image: url(./media/dolor_cabeza.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 10%;
 }
-
 .hpvContainer {
   display: grid;
   grid-template-columns: repeat(6, 150px);
@@ -120,14 +120,12 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 .itemHpv2 {
   background-image: url(./media/hpv.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 10%;
 }
-
 .monoxidoContainer {
   display: grid;
   grid-template-columns: repeat(5, 180px);
@@ -137,7 +135,6 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 .itemMon1 {
   background-image: url(./media/monoxido.jpg);
   background-size: cover;
@@ -146,30 +143,24 @@ footer {
   width: 300px;
   height: 300px;
 }
-
 .titleCap1 {
   font-size: 2.8em;
   font-weight: 900;
   line-height: 38px;
 }
-
 .subTitleCap1 {
   font-size: 0.8em;
   font-weight: 600;
 }
-
 .itemHpv1 h2 {
   padding-top: 35px;
 }
-
 .itemHpv1 p {
   padding-right: 35px;
 }
-
 .itemHpv3 p {
   padding-left: 0;
 }
-
 .txtCap2 {
   font-size: 0.8em;
   text-align: left;
@@ -178,35 +169,28 @@ footer {
   padding-top: 25px;
   line-height: 15px;
 }
-
 .itemCab2 {
   padding: 18px;
 }
-
 .itemHpv5 p {
   padding-left: 20px;
   font-size: 20px;
   line-height: 20px;
 }
-
 .subTitleMon {
   font-size: 1.5em;
 }
-
 .itemMon2 {
   display: flex;
   align-items: flex-end;
 }
-
 .sectionVideo {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
 .video, video {
   width: 250px;
 }
-
 .video h2 {
   font-size: 2em;
   font-weight: 900;
@@ -214,137 +198,113 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 .video p {
   font-size: 0.9em;
   text-align: justify;
 }
-
 /* Vista Mobile Home */
 .navMobileContainer {
   height: 70px;
 }
-
 /*nav mobile boopestrap*/
 .navbar-toggler {
-  background-color: #c1b8d7 !important;
+  background-color: $base-color !important;
 }
-
 .navbar-dark {
-  background-color: #c1b8d7 !important;
+  background-color: $base-color !important;
   height: 70px;
   width: 100%;
 }
-
 .navbar-collapse {
-  background-color: #c1b8d7 !important;
+  background-color: $base-color !important;
 }
-
 .nav-item {
   text-align: right;
   padding: 10px;
 }
-
 .nav-link {
-  color: #5a189a !important;
+  color: $font-color !important;
   font-size: 1.4em;
 }
-
 .navDesktop {
   display: none;
 }
-
 .bienv1Container {
-  color: #5a189a;
+  color: $font-color;
 }
-
 .bienvH1 {
   font-size: 0.9em;
   text-align: center;
   margin-top: 20px;
 }
-
 .bienvH1 em {
   font-weight: 600;
 }
-
 .bienvH1 span {
   font-size: 6.5em;
   font-weight: 900;
 }
-
 .especialidadLink {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
-
 .especialidadLink i {
   font-size: 2.5em;
 }
-
 .especialidadLink h3 a {
   text-decoration: none;
   font-size: 1em;
   display: inline-block;
-  color: #5a189a;
+  color: $font-color;
   line-height: 22px;
   padding-left: 15px;
 }
-
 .imgContainer {
   display: flex;
   justify-content: center;
 }
-
 .imgHome {
   height: 320px;
 }
-
 .divLine {
-  background-color: #5a189a;
+  background-color: $font-color;
   height: 4px;
   width: 95%;
   margin: auto;
 }
-
 #medicasgeneralistas {
   font-size: 3em;
   line-height: 40px;
   padding-top: 20px;
   text-align: center;
 }
-
 .subtituloMg {
   font-size: 1em;
   padding-bottom: 20px;
   text-align: center;
 }
-
 .recoContainer {
   width: 290px;
   margin: auto;
 }
-
 .imgMobile {
   width: 290px;
   border-radius: 15px;
 }
-
 .recoContainer p {
   font-size: 0.9em;
   text-align: justify;
   padding: 10px;
 }
-
 .boton {
   text-decoration: none;
   font-weight: 800;
   font-size: 1em;
   text-transform: uppercase;
-  color: #fff;
+  color: $light-color;
   padding: 5px;
-  background-color: #5a189a;
+  background-color: $font-color;
   border-radius: 15px;
   border: none;
   display: block;
@@ -354,47 +314,36 @@ footer {
   margin-bottom: 20px;
   width: 290px;
 }
-
 .capContainer {
-  display: flex;
-  justify-content: center;
+  @include flex-row-center;
 }
-
 .capTitle {
   font-weight: 900;
   font-size: 2.3em;
   padding-top: 20px;
   text-align: center;
 }
-
 .capTxt {
   font-size: 0.9em;
   text-align: justify;
   width: 290px;
   margin: auto;
 }
-
 .formContainer1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
 }
-
 .formContainer1 h2 {
   font-size: 2.3em;
   font-weight: 900;
 }
-
 .comTxt {
   width: 290px;
 }
-
 .inputHome {
   width: 290px;
   padding: 5px;
   margin-top: 10px;
 }
-
 /* Vista Mobile Capacitaciones */
 .galeriaContainer {
   display: grid;
@@ -406,122 +355,105 @@ footer {
   padding-right: 10px;
   padding-bottom: 10px;
 }
-
 .galItem1 {
   grid-column: 1/1;
   grid-row: 1/2;
 }
-
 .galItem2 {
   grid-column: 1/1;
   grid-row: 2/3;
 }
-
 .galItem3 {
   grid-column: 1/1;
   grid-row: 3/4;
 }
-
 .galItem4 {
   grid-column: 1/1;
   grid-row: 4/5;
 }
-
 .mainCap h1 {
   font-weight: 900;
   font-size: 2em;
   padding: 10px;
 }
-
 .mainCap p {
   font-size: 0.9em;
   text-align: justify;
   padding: 10px;
 }
-
 .inputCap {
   width: 100%;
   padding: 5px;
   margin-top: 10px;
 }
-
 .formCap textarea {
   height: 250px;
   width: 100%;
   padding: 5px;
   margin-top: 10px;
 }
-
 .formHome {
   text-align: center;
 }
-
 .footerContainer p, .footerContainer h4, .footerContainer i {
-  color: #fff;
+  color: $light-color;
 }
-
 .footerIzq, .footerDer {
   padding: 10px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
 .footerIzq h4 {
   font-size: 2em;
   font-weight: 200;
   line-height: 30px;
 }
-
 .footerIzq p {
   font-size: 0.9em;
   font-weight: 200;
   text-align: justify;
 }
-
 .footerIzq p strong {
-  color: #fff;
+  color: $light-color;
   font-weight: 400;
 }
-
 .footerDer i {
   font-size: 2em;
 }
-
 .footerDer h4 a {
   text-decoration: none;
-  color: #fff;
+  color: $light-color;
   font-size: 1.4em;
 }
-
 /* Vista Mobile ¿Que es MG? */
-.quemgTitle h1 {
-  font-weight: 900;
-  font-size: 2.9em;
-  width: 100%;
-  line-height: 45px;
-  padding: 10px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.quemgTitle{
+    h1 {
+    font-weight: 900;
+    font-size: 2.9em;
+    width: 100%;
+    line-height: 45px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 }
-
 .quemgImg {
-  display: flex;
-  justify-content: center;
+  @include flex-row-center;
   margin-top: 30px;
   margin-bottom: 30px;
+      img {
+      width: 270px;
+      border-radius: 50%;
+      border: 3px solid #fff0f3;
+      }
 }
-
-.quemgImg img {
-  width: 280px;
-  border-radius: 50%;
-  border: 6px solid #fff0f3;
-}
-
-.quemgTxt p {
-  font-size: 0.9em;
-  text-align: justify;
-  padding: 20px;
+.quemgTxt{
+    p{
+    font-size: $txt-mobile;
+    text-align: justify;
+    padding: 25px;
+    }
 }
 
 /* Vista Mobile Recomendaciones */
@@ -575,11 +507,9 @@ footer {
   font-weight: 600;
   padding-top: 10px;
 }
-
 .itemCab2 {
   padding: 10px;
 }
-
 .txtCap2 {
   font-size: 0.9em;
   text-align: left;
@@ -588,7 +518,6 @@ footer {
   padding-top: 0px;
   line-height: 15px;
 }
-
 .hpvContainer {
   display: grid;
   grid-template-columns: 300px;
@@ -598,56 +527,45 @@ footer {
   padding-top: 0px;
   padding-bottom: 20px;
 }
-
 .itemHpv {
   padding: 10px;
 }
-
 .itemHpv1 {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-
 .itemHpv2 {
   grid-column: 1/2;
   grid-row: 2/3;
   padding-top: 10px;
 }
-
 .itemHpv3 {
   grid-column: 1/2;
   grid-row: 3/4;
 }
-
 .itemHpv4 {
   grid-column: 1/2;
   grid-row: 4/5;
 }
-
 .itemHpv5 {
   grid-column: 1/2;
   grid-row: 5/6;
 }
-
 .itemHpv6 {
   grid-column: 1/2;
   grid-row: 6/7;
 }
-
 .itemHpv1 h2 {
   padding-top: 0px;
 }
-
 .itemHpv1 p {
   padding-right: 0px;
   padding-top: 10px;
 }
-
 .itemHpv3 p {
   padding-top: 20px;
   font-size: 0, 9em;
 }
-
 .itemHpv4 p {
   padding-top: 20px;
   font-size: 0, 9em;
@@ -661,11 +579,12 @@ footer {
 .sectionVideo {
   padding-top: 25px;
   padding-bottom: 25px;
-  width: 300px;
+  width: 320px;
   height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 .video, video {
   width: 300px;
@@ -682,7 +601,6 @@ footer {
   text-align: justify;
   padding: 10px;
 }
-
 .monoxidoContainer {
   display: grid;
   grid-template-columns: 300px;
@@ -692,13 +610,12 @@ footer {
   padding-top: 0px;
   padding-bottom: 25px;
 }
-
 .subTitleMon1, .subTitleMon2 {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 0.9em;
   font-weight: 400;
-  color: #7e7590;
+  color: $dark-color;
 }
 .itemMon1 {
   padding-bottom: 0;
@@ -707,18 +624,14 @@ footer {
   padding: 10px;
 }
 .itemMon4 p, .itemMon5 p, .itemMon6 p, .itemMon7 p{
-  color: #7e7590;
+  color: $dark-color;
   font-size: 0.9em;
 }
 /* Vista Mobile Contacto */
 .lymContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
         .lymItem{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          @include flex-column-center;
             width: 300px;
                 img{
                     border-radius: 50%;
@@ -744,9 +657,7 @@ footer {
         }
 }
 .contactoContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include flex-column-center;
         h1{
             font-size: $title-mobile;
             font-weight: $font-hard;
@@ -762,9 +673,7 @@ footer {
             padding: 10px;
         }
         .formContacto{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          @include flex-column-center;
             width: 300px;
                 input{
                   width: 300px;
@@ -780,9 +689,7 @@ footer {
         }
 }
 .mapaContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     margin: auto;
     width: 300px;
         .mapaItem1{
@@ -811,9 +718,6 @@ footer {
           height: 200px;
         }
 }
-
-
-
 /* Vista Tablet Home */
 @media only screen and (min-width: 576px) {
   .especialidadLink h3 a {
@@ -837,9 +741,7 @@ footer {
     margin-top: 20px;
   }
   .recoContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column-center;
     width: 100%;
   }
   .recoContainer img {
@@ -861,9 +763,7 @@ footer {
     margin-top: 50px;
   }
   .capContainer1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
   }
   .imgCap {
     width: 268px;
@@ -966,9 +866,7 @@ footer {
         }
   }
   .contactoContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     width: 100%;
         h1{
             font-size: 85px;
@@ -1004,7 +902,6 @@ footer {
                   }
       }
     }
-    
   /* recomendaciones vista tablet*/
   .reco1Container {
     display: grid;
@@ -1091,27 +988,36 @@ footer {
   .itemHpv1 p {
     padding-top: 25px;
   }
-  .videoContainer1 {
+  .sectionVideo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  .video, video {
-    width: 190px;
-    padding: 5px;
+    margin: auto;
   }
   .video h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
   }
   .video p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: justify;
     padding: 10px;
+    color: $dark-color;
+        strong{
+          color: $dark-color;
+        }
+  }
+  .video, video {
+    width: 190px;
+    padding: 5px;
   }
   .monoxidoContainer {
     display: grid;
@@ -1172,14 +1078,14 @@ footer {
     align-items: center;
   }
   .listNav {
-    border: 1.5px solid #5a189a;
+    border: 1.5px solid $font-color;
     border-radius: 15px;
     padding: 5px;
     margin: 0;
     margin-left: 80px;
   }
   .listNav:hover {
-    border: 2.5px solid #5a189a;
+    border: 2.5px solid $font-color;
   }
   .listNav li {
     list-style: none;
@@ -1189,7 +1095,7 @@ footer {
   }
   .listNav li a {
     text-decoration: none;
-    color: #5a189a;
+    color: $font-color;
   }
   .listNav li a:hover {
     font-weight: 600;
@@ -1211,7 +1117,7 @@ footer {
     text-decoration: none;
     font-size: 1em;
     display: inline-block;
-    color: #5a189a;
+    color: $font-color;
     line-height: 22px;
     padding-left: 15px;
   }
@@ -1360,28 +1266,30 @@ footer {
     display: flex;
     justify-content: flex-start;
   }
-  .quemgImg img {
-    width: 350px;
-  }
+  .quemgImg{ 
+      img {
+      width: 350px;
+      }
+  }   
   .quemgTitle {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  .quemgTitle h1 {
-    font-size: 5em;
-    text-align: left;
-    line-height: 70px;
-    padding-left: 90px;
+        h1{
+          font-size: 5em;
+          text-align: left;
+          line-height: 70px;
+          padding-left: 90px;
+          }
   }
   .quemgTxt {
-    display: flex;
-    justify-content: center;
-    padding-right: 90px;
-    padding-left: 90px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-right: 90px;
+      padding-left: 90px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 100%;
   }
   /* Vista Desktop contacto */
   .lymContainer{
@@ -1572,18 +1480,39 @@ footer {
     grid-column: 5/6;
     grid-row: 3/4;
   }
-  .videoContainer1 {
+  .sectionVideo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding-top: 0;
-  }
-  .videoContainer2 {
-    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
+        .videoContainer1, .videoContainer2, .videoContainer3{
+          padding-left: 50px;
+          padding-right: 50px;
+        }
   }
-  .videoContainer3 {
-    display: flex;
-    justify-content: flex-start;
+  .video h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .video p {
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 10px;
+    color: $dark-color;
+        strong{
+          color: $dark-color;
+        }
+  }
+  .video, video {
+    width: 250px;
+    padding: 5px;
   }
   .monoxidoContainer {
     display: grid;
@@ -1793,19 +1722,19 @@ footer {
   .itemHpv3 p {
     padding-left: 0;
   }
-  .videoContainer1 {
-    padding-top: 0;
+  .sectionVideo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+        .videoContainer1, .videoContainer2, .videoContainer3{
+          padding-left: 75px;
+          padding-right: 75px;
+        }
+        .video h2 {
+          font-size: 2em;
+        }
   }
-  .video, video {
+  .video, video{
     width: 300px;
-  }
-  .video h2 {
-    font-size: 2.3em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .video p {
-    font-size: 1em;
   }
   .monoxidoContainer {
     display: grid;
@@ -1869,5 +1798,5 @@ footer {
   .itemMon4{
     margin-left: 20px;
   }
-  
+
 }/*# sourceMappingURL=styles.css.map */

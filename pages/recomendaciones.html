@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Medicas Generalistas</title>
+        <title>Recomendaciones</title>
+        <meta name="description" content="Recomendaciones para el cuidado de la salud de niños y adultos">
+        <meta name="keywords" content="recomendaciones, salud, salud publica, dolor de cabeza, acv, hpv, consejos, vacunacion, glucemia, presion arterial, monoxido, monoxido de carbono, medicina familiar">
         <!--Boopstrap start-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--Boopstrap end-->
@@ -18,6 +20,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <!--Google fonts end-->
+        <!--AOS Animate start-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--AOS Animate end-->
     </head>
     <body class="fondoClaro">
         <header class="container-fluid"> 
@@ -64,7 +69,7 @@
             <div class="row">
                 <section class="col-lg-12 col-sm-12">
                     <div class="reco1Container">
-                        <div class="itemCab itemCab1"></div>
+                        <div data-aos="flip-right" class="itemCab itemCab1"></div>
                         <div class="itemCab itemCab2">
                             <h1 class="titleCap1">Recomendación:</h1>
                             <h2 class="titleCap1">No todos los dolores de cabeza son iguales.</h2>
@@ -95,7 +100,7 @@
                             <h2 class="titleCap1">¿Ya sabés qué es el HPV y cómo se transmite?</h2>
                             <p class="subTitleHpv">Cómo médicas Generalistas pensamos que la prevención es la clave fundamental para la construcción de la salud comunitaria.</p>
                         </div>
-                        <div class="itemHpv itemHpv2"></div>
+                        <div data-aos="flip-right" class="itemHpv itemHpv2"></div>
                         <div class="itemHpv itemHpv3">
                             <p class="txtCap2">Conocer las vacunas disponibles y cómo protegerte es clave y es también, un derecho.</p>
                         </div>
@@ -111,35 +116,37 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row sectionVideo">
-                <section class="col-lg-4 col-sm-4 videoContainer1">
-                    <div class="video">
-                        <video src="../media/video_vacunacion.mp4" controls></video>
-                        <h2>¿Dudas sobre la vacunación antigripal?</h2>
-                        <p>¡No dejes que los mitos te engañen! .<strong>La vacunación antigripal es segura, efectiva y crucial </strong>para proteger nuestra salud y la de nuestra comunidad.</p>
-                    </div>
-                </section>
-                <section class="col-lg-4 col-sm-4 videoContainer2">
-                    <div class="video">
-                        <video src="../media/automonitoreo.mp4" controls></video>
-                        <h2>Auto <br> monitoreo de glucemia</h2>
-                        <p>Se usa en pacientes con diabetes tipo 1 para monitoreo del tratamiento. También en pacientes con diabetes gestacional en tratamiento con insulina o sin esta, con requerimiento de seguimiento estricto.</p>
-                    </div>
-                </section>
-                <section class="col-lg-4 col-sm-4 videoContainer3">
-                    <div class="video">
-                        <video src="../media/pa.mp4" controls></video>
-                    <h2>Toma correcta de la presión arterial</h2>
-                    <p>La medición precisa de la presión arterial es clave para el diagnóstico efectivo. Se puede lograr con el uso de dispositivos electrónicos validados, el uso de un protocolo correcto de medición y la preparación adecuada del paciente.</p>
-                    </div>
-                </section>
+            <div class="row">
+                <main class="col-lg-12 col-sm-12 sectionVideo">
+                    <section class="videoContainer1">
+                        <div class="video">
+                            <video src="../media/video_vacunacion.mp4" controls></video>
+                            <h2>¿Dudas sobre la vacunación antigripal?</h2>
+                            <p>¡No dejes que los mitos te engañen! .<strong>La vacunación antigripal es segura, efectiva y crucial </strong>para proteger nuestra salud y la de nuestra comunidad.</p>
+                        </div>
+                    </section>
+                    <section class="videoContainer2">
+                        <div class="video">
+                            <video src="../media/automonitoreo.mp4" controls></video>
+                            <h2>Auto <br> monitoreo de glucemia</h2>
+                            <p>Se usa en pacientes con diabetes tipo 1 para monitoreo del tratamiento. También en pacientes con diabetes gestacional en tratamiento con insulina o sin esta, con requerimiento de seguimiento estricto.</p>
+                        </div>
+                    </section>
+                    <section class="videoContainer3">
+                        <div class="video">
+                            <video src="../media/pa.mp4" controls></video>
+                        <h2>Toma correcta de la presión arterial</h2>
+                        <p>La medición precisa de la presión arterial es clave para el diagnóstico efectivo. Se puede lograr con el uso de dispositivos electrónicos validados, el uso de un protocolo correcto de medición y la preparación adecuada del paciente.</p>
+                        </div>
+                    </section>
+                </main>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
                 <section class="col-lg-12 col-sm-12">
                     <div class="monoxidoContainer">
-                        <div class="itemMon itemMon1"></div>
+                        <div data-aos="flip-right" class="itemMon itemMon1"></div>
                         <div class="itemMon itemMon2">
                             <h2 class="titleCap1">Es un gas muy tóxico para las personas y los animales.</h2>
                         </div>
@@ -194,5 +201,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!--Boopstrap end-->
+    <!--AOS Animate start-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!--AOS Animate end-->
 </body>
 </html>
