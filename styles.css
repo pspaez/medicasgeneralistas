@@ -16,6 +16,16 @@
   background-image: linear-gradient(#fff0f3, #fff);
 }
 
+textarea {
+  resize: none;
+}
+
+.textarea:focus {
+  color: #5a189a;
+  outline: none;
+  background-color: #f2edfa;
+}
+
 /* Header & nav */
 header {
   background-color: #c1b8d7;
@@ -23,8 +33,7 @@ header {
   position: relative;
   z-index: 10;
 }
-
-.botonNav {
+header .botonNav {
   text-decoration: none;
   background-color: #7e7590;
   color: #fff;
@@ -34,8 +43,7 @@ header {
   padding: 8px;
   border-radius: 15px;
 }
-
-.botonNav:hover {
+header .botonNav:hover {
   background-color: #5a189a;
   color: #fff;
 }
@@ -46,41 +54,32 @@ footer {
   width: 100%;
 }
 
-.spaceNav {
-  margin-top: 70px;
-}
-
 /* capacitaciones*/
 .galeriaContainer {
   display: grid;
   gap: 10px;
 }
-
-.galItem {
+.galeriaContainer .galItem {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
 }
-
-.galItem1 {
+.galeriaContainer .galItem1 {
   background-image: url(./media/capacitaciones2.jpg);
   grid-column: 1/2;
   grid-row: 1/3;
 }
-
-.galItem2 {
+.galeriaContainer .galItem2 {
   background-image: url(./media/capacitaciones1.jpg);
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
-.galItem3 {
+.galeriaContainer .galItem3 {
   background-image: url(./media/capacitaciones3.jpg);
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
-.galItem4 {
+.galeriaContainer .galItem4 {
   background-image: url(./media/capacitaciones4.jpg);
   grid-column: 1/3;
   grid-row: 3/4;
@@ -101,8 +100,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.itemCab1 {
+.reco1Container .itemCab1 {
   background-image: url(./media/dolor_cabeza.jpg);
   background-size: cover;
   background-position: center;
@@ -118,8 +116,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.itemHpv2 {
+.hpvContainer .itemHpv2 {
   background-image: url(./media/hpv.jpg);
   background-size: cover;
   background-position: center;
@@ -135,8 +132,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.itemMon1 {
+.monoxidoContainer .itemMon1 {
   background-image: url(./media/monoxido.jpg);
   background-size: cover;
   background-position: center;
@@ -223,7 +219,7 @@ footer {
   height: 70px;
 }
 
-/*nav mobile boopestrap*/
+/*nav mobile boopstrap*/
 .navbar-toggler {
   background-color: #c1b8d7 !important;
 }
@@ -236,6 +232,7 @@ footer {
 
 .navbar-collapse {
   background-color: #c1b8d7 !important;
+  width: 100%;
 }
 
 .nav-item {
@@ -246,6 +243,7 @@ footer {
 .nav-link {
   color: #5a189a !important;
   font-size: 1.4em;
+  width: 100%;
 }
 
 .navDesktop {
@@ -280,7 +278,6 @@ footer {
 .especialidadLink i {
   font-size: 2.5em;
 }
-
 .especialidadLink h3 a {
   text-decoration: none;
   font-size: 1em;
@@ -288,6 +285,9 @@ footer {
   color: #5a189a;
   line-height: 22px;
   padding-left: 15px;
+}
+.especialidadLink h3 a:hover {
+  font-weight: 600;
 }
 
 .imgContainer {
@@ -353,6 +353,10 @@ footer {
   width: 290px;
 }
 
+.botonCenter:hover {
+  color: #fff0f3;
+}
+
 .capContainer {
   display: flex;
   flex-direction: row;
@@ -371,6 +375,10 @@ footer {
   text-align: justify;
   width: 290px;
   margin: auto;
+}
+
+.capContainer2 a:hover {
+  color: #fff0f3;
 }
 
 .formContainer1 {
@@ -392,6 +400,16 @@ footer {
   width: 290px;
   padding: 5px;
   margin-top: 10px;
+}
+
+.inputHome:focus {
+  color: #5a189a;
+  outline-color: #5a189a;
+  background-color: #f2edfa;
+}
+
+.botonForm:hover {
+  color: #fff0f3;
 }
 
 /* Vista Mobile Capacitaciones */
@@ -444,11 +462,23 @@ footer {
   margin-top: 10px;
 }
 
+.inputCap:focus {
+  color: #5a189a;
+  outline-color: #5a189a;
+  background-color: #f2edfa;
+}
+
 .formCap textarea {
   height: 250px;
   width: 100%;
   padding: 5px;
   margin-top: 10px;
+}
+
+.formCap textarea:focus {
+  color: #5a189a;
+  outline-color: #5a189a;
+  background-color: #f2edfa;
 }
 
 .formHome {
@@ -470,22 +500,30 @@ footer {
   font-weight: 200;
   line-height: 30px;
 }
-
 .footerIzq p {
   font-size: 0.9em;
   font-weight: 200;
   text-align: justify;
 }
-
 .footerIzq p strong {
   color: #fff;
   font-weight: 400;
+}
+.footerIzq .listFooter li {
+  list-style: none;
+}
+.footerIzq .listFooter li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footerIzq ul {
+  padding-left: 0;
+  padding-top: 20px;
 }
 
 .footerDer i {
   font-size: 2em;
 }
-
 .footerDer h4 a {
   text-decoration: none;
   color: #fff;
@@ -518,7 +556,7 @@ footer {
 }
 
 .quemgTxt p {
-  font-size: 15px;
+  font-size: 16px;
   text-align: justify;
   padding: 25px;
 }
@@ -744,7 +782,7 @@ footer {
   padding-bottom: 5px;
 }
 .lymContainer .lymItem p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   text-align: justify;
   padding: 10px;
@@ -783,11 +821,21 @@ footer {
   padding: 5px;
   margin-top: 10px;
 }
+.contactoContainer .formContacto input:focus {
+  color: #5a189a;
+  outline-color: #5a189a;
+  background-color: #f2edfa;
+}
 .contactoContainer .formContacto textarea {
   width: 300px;
   height: 200px;
   padding: 5px;
   margin: 10px;
+}
+.contactoContainer .formContacto textarea:focus {
+  color: #5a189a;
+  outline-color: #5a189a;
+  background-color: #f2edfa;
 }
 
 .mapaContainer {
@@ -892,8 +940,7 @@ footer {
   .formContainer1 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     height: 300px;
   }
   .comTitle {
@@ -925,6 +972,9 @@ footer {
   }
   .botonCenter {
     margin: auto;
+  }
+  .botonCenter:hover {
+    color: #fff0f3;
   }
   /* Vista Tablet Capacitaciones */
   .galeriaContainer {
@@ -1303,6 +1353,9 @@ footer {
   }
   .botonCenter {
     margin: auto;
+  }
+  .botonCenter:hover {
+    color: #fff0f3;
   }
   .botonDesktop {
     margin-left: 30px;
